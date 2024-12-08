@@ -22,6 +22,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #383a48;
+}
+
 nav ul li a.active {
   font-weight: bold;
   color: #ff6600;

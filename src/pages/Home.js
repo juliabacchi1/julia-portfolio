@@ -8,10 +8,18 @@ function Home() {
     <div>
       <section id="home">
         <div className="Container">
-          <p>Hello, I'm Julia Bacchi</p>
-          <h1>A Web Developer</h1>
+          <div>
+            <p>Hi! I'm Julia Bacchi</p>
+          </div>
+          <div className="Container-son">
+            <h1>A Web</h1>
+            <p>photo</p>
+          </div>
+          <div>
+            <h1>Developer</h1>
+          </div>
         </div>
-        <div className="Introduction">
+        <div className="Container">
           <h3>
             A curious front-end developer always exploring new ways to craft
             meaningful experiences.
