@@ -1,0 +1,17 @@
+.Container {
+    margin: 50px;
+}
+
+h1.Introduction {
+    font-size: 150px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0;
+}
+
+p.Hello {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0;
+}
