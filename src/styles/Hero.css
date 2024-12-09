@@ -1,0 +1,18 @@
+.Introduction {
+  max-width: 1020px;
+  margin: 80px auto;
+}
+
+.Container-intro {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr;
+  gap: 20px;
+}
+
+.Introduction h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #3a3d53;
+}
