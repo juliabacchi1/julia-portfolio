@@ -6,9 +6,9 @@ import Contact from "../components/Contact";
 
 function Home() {
   return (
-    <div>
+    <div className="Home">
       <section id="home">
-        <div className="Container">
+        <div className="Container-home">
           <p>Hi! I'm Julia Bacchi</p>
           <h1>A Web Developer</h1>
         </div>
@@ -19,12 +19,10 @@ function Home() {
       </section>
 
       <section id="work">
-        <h2>My Work</h2>
         <Work />
       </section>
 
       <section id="contact">
-        <h2>Say Hello!</h2>
         <Contact />
       </section>
     </div>
