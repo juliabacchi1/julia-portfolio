@@ -3,7 +3,20 @@ nav {
   justify-content: space-between;
   padding: 20px;
   color: black;
+  background-color: #f5f5f5;
   align-items: center;
+  transition: background-color 0.3s ease, height 0.3s ease; /* Transição suave */
+  position: fixed; /* Fixa o nav no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 80px; /* Altura inicial */
+}
+
+nav.sticky {
+  background-color: none;
+  height: 40px; /* Altura quando rolar */
 }
 
 nav ul {
@@ -23,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #383a48;
+  color: #ff6600;
 }
 
 nav ul li a.active {
@@ -41,8 +54,5 @@ nav .Links {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-}
-
-section {
-  padding: 80px 20px;
+  margin-right: 50px;
 }

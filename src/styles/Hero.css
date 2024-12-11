@@ -1,7 +1,11 @@
+section .Hero {
+  background-color: orange;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 .Container-hero {
-  max-width: 1020px;
-  margin: 80px auto;
-  margin-bottom: 0;
+  margin: 0 100px;
 }
 
 .Container-intro {
@@ -20,16 +24,48 @@
 
 .Container-intro h3 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   color: #3a3d53;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
-.Reed-more {
-  display: flex;
-  justify-content: center;
+.Read-more {
+  display: inline-flex;
+  align-items: center;
 }
 
-section {
-  overflow: visible; /* Permite que o elemento mova-se fora do seu contêiner, se necessário */
+.Read-more a {
+  text-decoration: none;
+  position: relative;
+  opacity: 0.7; /* Começa com opacidade menor */
+  transition: top 0.3s ease, opacity 0.3s ease; /* Transições para o movimento e opacidade */
 }
+
+.Read-more p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Read-more a:hover {
+  transform: scale(1.1) translate(6px, -1px);
+  opacity: 1; /* Torna o link mais visível */
+}
+
+
+.Download-cv {
+  position: relative;
+  display: inline-block;
+}
+
+.Download-cv button {
+  position: relative;
+  background: blue;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden; /* Para esconder partes externas */
+}
+

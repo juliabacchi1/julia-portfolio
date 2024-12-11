@@ -1,18 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
   // useState para armazenar o link ativo
   const [activeLink, setActiveLink] = useState("home");
+  const [isSticky, setIsSticky] = useState(false);
 
   // Função para mudar o link ativo
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
 
+  // Função para adicionar a classe sticky ao rolar a página
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsSticky(true); // Quando rolar mais de 100px, adiciona a classe sticky
+    } else {
+      setIsSticky(false); // Remove a classe sticky se rolar para o topo
+    }
+  };
+
+  // Adiciona o listener de scroll
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove o listener ao desmontar o componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav className={isSticky ? "sticky" : ""}>
       <ul>
         <li className="Home">
           <Link

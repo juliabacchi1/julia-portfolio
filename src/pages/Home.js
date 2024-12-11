@@ -9,8 +9,10 @@ function Home() {
     <div className="Home">
       <section id="home">
         <div className="Container-home">
-          <p>Hi! I'm Julia Bacchi</p>
-          <h1>A Web Developer</h1>
+          <div className="Container-wrapper">
+            <p>Hi! I'm Julia Bacchi</p>
+            <h1>A Web Developer</h1>
+          </div>
         </div>
       </section>
 

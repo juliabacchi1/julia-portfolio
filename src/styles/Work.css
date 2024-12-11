@@ -1,7 +1,7 @@
 section .Work {
-  background-color: #cfeafc;
+  background-color: #f3d0d0;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 .Container-work {
@@ -17,20 +17,22 @@ section .Work {
   padding: 70px;
   border-radius: 20px;
   overflow: hidden;
-  gap: 60px;
+  gap: 200px;
 }
 
 .Container-project {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
 }
 
 .Image-wrapper {
   position: relative;
+  overflow: hidden;
   z-index: 1;
+  border-radius: 20px;
 }
 
 .Image-wrapper img {
@@ -40,17 +42,27 @@ section .Work {
   height: 590px;
 }
 
+.Image-block {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.Image-wrapper:hover .Image-block {
+  transform: scale(1.1); /* Expande a imagem para 10% */
+}
+
 .Content-wrapper {
   position: absolute;
-  right: 80px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ffffff;
   border-radius: 20px;
   padding: 60px;
   z-index: 2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.033);
-  width: 370px;
+  box-shadow: -8px 10px 25px -12px rgba(0,0,0,0.62);
+  width: 360px;
   height: 340px;
 }
 
@@ -82,12 +94,12 @@ section .Work {
 }
 
 .Thumbnail-link {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .Thumbnail-link a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .Live {
@@ -101,6 +113,7 @@ h2 {
   font-size: 60px;
   margin-bottom: 40px;
   font-weight: 500;
+  padding-left: 65px;
 }
 
 h3 {
