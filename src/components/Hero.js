@@ -8,10 +8,9 @@ function Hero() {
         <div className="Container-intro">
           <div>
             <div className="Download-cv">
-              <button>
-                <span>Download CV</span>
-                <div className="circle"></div>
-              </button>
+              <a href="#" className="primary-button">
+                Download Resume
+              </a>
             </div>
           </div>
           <div>
@@ -21,7 +20,7 @@ function Hero() {
             </h3>
             <div className="Read-more">
               <a href="#readmore">
-                <p>Read more →</p>
+                <button class="Button-read">Read more</button>
               </a>
             </div>
           </div>

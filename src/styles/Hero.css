@@ -1,5 +1,5 @@
 section .Hero {
-  background-color: orange;
+  background-color: #f8f8f8;
   margin: 0 auto;
   padding: 100px;
 }
@@ -34,38 +34,56 @@ section .Hero {
   align-items: center;
 }
 
-.Read-more a {
-  text-decoration: none;
+button.Button-read {
+  background: transparent;
+  padding: 12px 25px;
+  border: 1px solid #3a3d53;
+  color: #3a3d53;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px auto;
+  border-radius: 60px;
+  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
   position: relative;
-  opacity: 0.7; /* Começa com opacidade menor */
-  transition: top 0.3s ease, opacity 0.3s ease; /* Transições para o movimento e opacidade */
+  transition: 0.5s;
 }
 
-.Read-more p {
-  font-size: 20px;
-  font-weight: 600;
+button.Button-read:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 12px;
+  right: -5px;
+  transition: 0.5s;
 }
 
-.Read-more a:hover {
-  transform: scale(1.1) translate(6px, -1px);
-  opacity: 1; /* Torna o link mais visível */
+button.Button-read:hover {
+  padding-right: 24px;
+  padding-left: 14px;
 }
 
+button.Button-read:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 
-.Download-cv {
-  position: relative;
+.primary-button {
   display: inline-block;
+  padding: 9px 15px;
+  background-color: transparent; /* Cor de fundo para o botão */
+  color: #3a3d53;
+  border: 2px solid black; /* Definição compacta da borda */
+  border-style: dotted;
+  width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+  text-decoration: none;
 }
 
-.Download-cv button {
-  position: relative;
-  background: blue;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 100px;
-  cursor: pointer;
-  overflow: hidden; /* Para esconder partes externas */
+/* Efeito no hover */
+.primary-button:hover {
+  background-position: 100% 50%; /* Move o ícone para a direita */
+  background-color: black; /* Altera o fundo no hover */
+  color: white; /* Muda a cor do texto */
 }
-

@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   padding: 20px;
   color: black;
-  background-color: #f5f5f5;
+  background-color: #F8F8F8;
   align-items: center;
   transition: background-color 0.3s ease, height 0.3s ease; /* Transição suave */
   position: fixed; /* Fixa o nav no topo */
@@ -11,12 +11,12 @@ nav {
   left: 0;
   width: 100%;
   z-index: 10;
-  height: 80px; /* Altura inicial */
+  height: 40px; /* Altura inicial */
 }
 
 nav.sticky {
   background-color: none;
-  height: 40px; /* Altura quando rolar */
+  height: 10px; /* Altura quando rolar */
 }
 
 nav ul {
