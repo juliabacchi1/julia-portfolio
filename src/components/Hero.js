@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Hero.css";
+import { Link } from "react-router-dom";
+import Resume from "../assets/images/Resume.pdf";
 
 function Hero() {
   return (
@@ -8,7 +10,11 @@ function Hero() {
         <div className="Container-intro">
           <div>
             <div className="Download-cv">
-              <a href="#" className="primary-button">
+              <a
+                href={Resume}
+                className="primary-button"
+                download="Resume_Julia.pdf"
+              >
                 Download Resume
               </a>
             </div>
@@ -19,9 +25,9 @@ function Hero() {
               meaningful experiences.
             </h3>
             <div className="Read-more">
-              <a href="#readmore">
+              <Link to="/about">
                 <button class="Button-read">Read more</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

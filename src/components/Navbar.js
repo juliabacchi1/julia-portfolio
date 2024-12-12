@@ -1,44 +1,91 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  // useState para armazenar o link ativo
-  const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("home"); // Definir o estado de activeLink
   const [isSticky, setIsSticky] = useState(false);
+  const location = useLocation(); // Usando useLocation para pegar o caminho atual
+  const navigate = useNavigate();
 
-  // Função para mudar o link ativo
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
+  // Função para rolar até a âncora
+  const scrollToAnchor = (anchor) => {
+    const element = document.getElementById(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   // Função para adicionar a classe sticky ao rolar a página
   const handleScroll = () => {
     if (window.scrollY > 100) {
-      setIsSticky(true); // Quando rolar mais de 100px, adiciona a classe sticky
+      setIsSticky(true);
     } else {
-      setIsSticky(false); // Remove a classe sticky se rolar para o topo
+      setIsSticky(false);
     }
   };
 
-  // Adiciona o listener de scroll
   useEffect(() => {
+    // Lógica para adicionar o "sticky" ao navbar
     window.addEventListener("scroll", handleScroll);
 
-    // Remove o listener ao desmontar o componente
+    // Limpeza do event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Atualiza a navegação com base na localização (usando pathname)
+    const sections = document.querySelectorAll("section");
+    const options = { root: null, threshold: 0.2 }; // 20% da seção visível
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          // Atualiza o link ativo com base na seção visível
+          if (location.pathname === "/") {
+            // Só atualiza se estiver na página inicial
+            setActiveLink(id);
+          }
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section)); // Remove observador
+    };
+  }, [location]);
+
+  // Função para mudar o link ativo e lidar com navegação
+  const handleLinkClick = (link) => {
+    setActiveLink(link); // Atualiza o link ativo ao clicar
+
+    if (link.startsWith("#")) {
+      const anchor = link.slice(1);
+
+      if (location.pathname !== "/") {
+        navigate("/", { replace: true });
+        setTimeout(() => scrollToAnchor(anchor), 100); // Aguarda o redirecionamento antes de rolar
+      } else {
+        scrollToAnchor(anchor); // Rola para a âncora se já estiver na Home
+      }
+    } else {
+      navigate(link); // Navega para as páginas (não âncoras)
+    }
+  };
 
   return (
     <nav className={isSticky ? "sticky" : ""}>
       <ul>
         <li className="Home">
           <Link
-            to="#home"
-            onClick={() => handleLinkClick("home")}
-            className={activeLink === "home" ? "active" : ""}
+            to="/"
+            onClick={() => handleLinkClick("#home")}
+            className={location.pathname === "/" ? "home-active" : ""}
           >
             Home
           </Link>
@@ -47,13 +94,16 @@ function Navbar() {
       <div className="Links">
         <ul>
           <li>
-            <Link
-              to="#work"
-              onClick={() => handleLinkClick("work")}
+            <a
+              href="#work"
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick("#work");
+              }}
               className={activeLink === "work" ? "active" : ""}
             >
               Work
-            </Link>
+            </a>
           </li>
           <li>
             <Link
@@ -65,13 +115,16 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="#contact"
-              onClick={() => handleLinkClick("contact")}
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick("#contact");
+              }}
               className={activeLink === "contact" ? "active" : ""}
             >
               Contact
-            </Link>
+            </a>
           </li>
           <li>
             <Link

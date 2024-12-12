@@ -53,7 +53,7 @@ function Work() {
     },
   ];
   return (
-    <section className="Work">
+    <section id="work" className="Work">
       <div className="Container-work">
         <h2>Selected projects</h2>
         <div className="Container-projects">

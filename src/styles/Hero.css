@@ -66,24 +66,3 @@ button.Button-read:hover:after {
   opacity: 1;
   right: 10px;
 }
-
-.primary-button {
-  display: inline-block;
-  padding: 9px 15px;
-  background-color: transparent; /* Cor de fundo para o botão */
-  color: #3a3d53;
-  border: 2px solid black; /* Definição compacta da borda */
-  border-style: dotted;
-  width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	overflow: hidden;
-  text-decoration: none;
-}
-
-/* Efeito no hover */
-.primary-button:hover {
-  background-position: 100% 50%; /* Move o ícone para a direita */
-  background-color: black; /* Altera o fundo no hover */
-  color: white; /* Muda a cor do texto */
-}
