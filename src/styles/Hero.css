@@ -1,5 +1,11 @@
 section .Hero {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background: linear-gradient(
+    180deg,
+    rgba(248, 248, 248, 1) 60%,
+    rgba(236, 233, 250, 1) 100%
+  );
+
   margin: 0 auto;
   padding: 100px;
 }

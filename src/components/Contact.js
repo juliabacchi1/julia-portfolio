@@ -4,10 +4,12 @@ import "../styles/Contact.css";
 function Contact() {
   return (
     <section id="contact" className="Contact">
-      <div>
-        <p>Email: juliabacchi92@gmail.com</p>
+      <div className="Container-contact">
+        <h3>Say Hello.</h3>
+        <div className="Info-contact">
+          <button className="Info-button">juliabacchi92@gmail.com</button>
+        </div>
         <p>Socials:</p>
-        {/* Formulário de contato aqui */}
       </div>
     </section>
   );

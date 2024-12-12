@@ -5,4 +5,39 @@ section .Contact {
   padding: 100px;
 }
 
-/* #E0EDFB */
+.Container-contact {
+  text-align: center;
+}
+
+.Container-contact h3 {
+  font-size: 100px;
+}
+
+.Info-contact {
+  display: inline-flex;
+  margin: 50px auto;
+}
+
+button.Info-button {
+  background: white;
+  padding: 15px 40px;
+  border: none;
+  color: #3a3d53;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 60px;
+  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
+  transition: 0.5s;
+  position: relative;
+}
+
+button.Info-button:after {
+  position: absolute;
+  transition: 0.5s;
+}
+
+button.Info-button:hover {
+  padding: 15px 45px;
+  letter-spacing: 2px;
+}

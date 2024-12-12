@@ -1,6 +1,9 @@
 section .Work {
-  /* background-color: #DDDAF2; */
-  background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(221, 218, 242, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 233, 250, 1) 0%,
+    rgba(221, 218, 242) 100%
+  );
   margin: 0 auto;
   padding: 50px;
 }
@@ -62,7 +65,7 @@ section .Work {
   border-radius: 20px;
   padding: 60px;
   z-index: 2;
-  box-shadow: -8px 10px 25px -12px rgba(0,0,0,0.62);
+  box-shadow: -8px 10px 25px -12px rgba(0, 0, 0, 0.62);
   width: 360px;
   height: 340px;
 }
