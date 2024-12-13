@@ -1,0 +1,31 @@
+section .About {
+  background: linear-gradient(
+    180deg,
+    rgba(248, 248, 248, 1) 60%,
+    rgba(236, 233, 250, 1) 100%
+  );
+  margin: 0 auto;
+}
+
+.Container-about {
+  margin: 100px;
+}
+
+.About-hero {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.About-hero h3 {
+  font-size: 30px;
+}
+
+.About-hero h1 {
+  font-size: 140px;
+  font-weight: 500;
+  margin: 0;
+}
+
+

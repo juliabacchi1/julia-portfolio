@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/Hero.css";
 import { Link } from "react-router-dom";
 import Resume from "../assets/images/Resume.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
   return (
@@ -9,13 +11,10 @@ function Hero() {
       <div className="Container-hero">
         <div className="Container-intro">
           <div>
-            <div className="Download-cv">
-              <a
-                href={Resume}
-                className="primary-button"
-                download="Resume_Julia.pdf"
-              >
-                Download Resume
+            <div className="download-card">
+              <h4>Get my Resume</h4>
+              <a href={Resume} download="Resume_Julia.pdf">
+                Download
               </a>
             </div>
           </div>
@@ -26,7 +25,10 @@ function Hero() {
             </h3>
             <div className="Read-more">
               <Link to="/about">
-                <button class="Button-read">Read more</button>
+                <button className="Button-read">
+                  Read more
+                  <FontAwesomeIcon className="Read-icon" icon={faArrowRight} />
+                </button>
               </Link>
             </div>
           </div>

@@ -1,12 +1,17 @@
 section .Contact {
   /* background-color: #EBF5F3; */
-  background: linear-gradient(180deg, rgba(221, 218, 242, 1 ) 0%, rgba(248, 248, 248, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(221, 218, 242, 1) 0%,
+    rgba(248, 248, 248, 1) 100%
+  );
   margin: 0 auto;
-  padding: 100px;
 }
 
 .Container-contact {
   text-align: center;
+  padding: 50px;
+  padding-bottom: 0;
 }
 
 .Container-contact h3 {
@@ -15,7 +20,7 @@ section .Contact {
 
 .Info-contact {
   display: inline-flex;
-  margin: 50px auto;
+  margin: 40px;
 }
 
 button.Info-button {
@@ -30,6 +35,7 @@ button.Info-button {
   box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
   transition: 0.5s;
   position: relative;
+  cursor: pointer;
 }
 
 button.Info-button:after {
@@ -40,4 +46,25 @@ button.Info-button:after {
 button.Info-button:hover {
   padding: 15px 45px;
   letter-spacing: 2px;
+  background: #f0f0f0;
+}
+
+a .Info-link {
+  text-decoration: none;
+}
+
+.Info-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Icon {
+  font-size: 24px;
+  color: #3a3d53;
+  transition: color 0.3s;
+}
+
+.Icon:hover {
+  color: #ff6600;
 }

@@ -35,40 +35,77 @@ section .Hero {
   line-height: 1.8;
 }
 
-.Read-more {
-  display: inline-flex;
+.download-card {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button.Button-read {
-  background: transparent;
-  padding: 12px 25px;
-  border: 1px solid #3a3d53;
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-card h4 {
+  font-size: 18px;
   color: #3a3d53;
+}
+
+.download-card a {
+  padding: 10px 20px;
+  background: #3a3d53;
+  color: white;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: 500;
-  margin: 20px auto;
-  border-radius: 60px;
-  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
-  position: relative;
-  transition: 0.5s;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-button.Button-read:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 12px;
-  right: -5px;
-  transition: 0.5s;
+.download-card a:hover {
+  background: #ff6600;
 }
 
-button.Button-read:hover {
-  padding-right: 24px;
-  padding-left: 14px;
+
+.Read-more {
+  margin: 30px 0;
 }
 
-button.Button-read:hover:after {
-  opacity: 1;
-  right: 10px;
+.Button-read {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background: #3a3d53;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Button-read .Read-icon {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.Button-read:hover {
+  background: #ff6600;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.Button-read:hover .Read-icon {
+  transform: translateX(5px);
 }

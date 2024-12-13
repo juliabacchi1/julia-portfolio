@@ -87,7 +87,7 @@ function Navbar() {
             onClick={() => handleLinkClick("#home")}
             className={location.pathname === "/" ? "home-active" : ""}
           >
-            Home
+            Julia Bacchi
           </Link>
         </li>
       </ul>

@@ -10,7 +10,7 @@ function Home() {
       <section id="home">
         <div className="Container-home">
           <div className="Container-wrapper">
-            <p>Hi! I'm Julia Bacchi</p>
+            <p>Hello, I'm Julia</p>
             <h1>A Web Developer</h1>
           </div>
         </div>
