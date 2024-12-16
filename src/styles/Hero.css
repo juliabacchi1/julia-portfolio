@@ -36,47 +36,40 @@ section .Hero {
 }
 
 .download-card {
-  width: 300px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Necessário para posicionar o texto sobre a imagem */
 }
 
-.download-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.resume-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.download-card h4 {
+.resume-image:hover {
+  transform: scale(1.1);
+}
+
+.download-text {
+  display: none;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 18px;
-  color: #3a3d53;
+  transition: opacity 0.3s ease;
 }
 
-.download-card a {
-  padding: 10px 20px;
-  background: #3a3d53;
-  color: white;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.download-card:hover .download-text {
+  display: block;
+  color: #ff6600;
 }
-
-.download-card a:hover {
-  background: #ff6600;
-}
-
 
 .Read-more {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .Button-read {
