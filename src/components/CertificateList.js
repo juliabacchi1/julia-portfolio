@@ -7,12 +7,12 @@ const certifications = [
     link: "https://www.shecodes.io/certificates/5c10d79c325c7d7c1710406081f9a2ba?_gl=1*1fc7df0*_gcl_au*MTAyNzc0MjE0MC4xNzMyOTEzMjUx",
   },
   {
-    date: "October 2024",
+    date: "September 2024",
     title: "React Development",
     link: "https://www.shecodes.io/certificates/32cca132cccc818562a13d3f3a316856?_gl=1*igg9ra*_gcl_au*MTU4MTI4ODkuMTcyOTI1MjAyNw",
   },
   {
-    date: "September 2024",
+    date: "August 2024",
     title: "Advanced Responsive Web Dev",
     link: "https://www.shecodes.io/certificates/4e4ce86eb863258b8eae61cfbc5ae76a?_gl=1*y7r36g*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0LjIwNTU5NDU5NzMuMTcyMzQyOTg3Ni4xNzIzNDI5ODc1",
   },
@@ -32,7 +32,7 @@ const certifications = [
     link: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
   {
-    date: "May 2024",
+    date: "June 2024",
     title: "Web Development",
     link: "https://www.shecodes.io/certificates/68d8c8ba5dc3e60f79b6089f2293d722?_gl=1*x5esdq*_gcl_au*MjU2NjIzODI5LjE3MTEzNzc5MjQuMTUzMTE4NDU4MS4xNzE2NDMxMDQwLjE3MTY0MzEyODY",
   },
@@ -42,7 +42,7 @@ const certifications = [
     link: "https://www.shecodes.io/certificates/b6f22f32dd61e405a598431dfadae14e?_gl=1*1wpvulc*_gcl_au*MjU2NjIzODI5LjE3MTEzNzc5MjQuMTUzMTE4NDU4MS4xNzE2NDMxMDQwLjE3MTY0MzEyODY",
   },
   {
-    date: "March 2024",
+    date: "April 2024",
     title: "Introduction to Coding",
     link: "https://www.shecodes.io/certificates/57626aeb2fa445fed52acb3c7d60b526?_gl=1*1wpvulc*_gcl_au*MjU2NjIzODI5LjE3MTEzNzc5MjQuMTUzMTE4NDU4MS4xNzE2NDMxMDQwLjE3MTY0MzEyODY",
   },
