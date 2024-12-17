@@ -4,7 +4,12 @@ nav {
   padding: 20px;
   color: black;
   /* background-color: #f8f8f8; */
-  background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(221, 218, 242, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 233, 250, 1) 0%,
+    rgba(236, 233, 250, 0.5) 50%,
+    rgba(236, 233, 250, 0) 100%
+  );
   align-items: center;
   transition: background-color 0.3s ease, height 0.3s ease; /* Transição suave */
   position: fixed; /* Fixa o nav no topo */

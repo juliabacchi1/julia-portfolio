@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import Work from "../components/Work";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
+import Profile from "../assets/images/Profile.png";
 
 function Home() {
   return (
@@ -10,8 +11,16 @@ function Home() {
       <section id="home">
         <div className="Container-home">
           <div className="Container-wrapper">
-            <p>Hello, I'm Julia</p>
-            <h1>A Web Developer</h1>
+            <div className="Intro">
+              <h4>Hello, I'm Julia</h4>
+            </div>
+            <div className="Main">
+              <h1>— Web</h1>
+              <img src={Profile} alt="Julia" className="Profile-img" />
+            </div>
+            <div className="Content">
+              <h2>Developer</h2>
+            </div>
           </div>
         </div>
       </section>

@@ -1,10 +1,13 @@
 .Container-home {
   height: 100vh;
-  /* background: linear-gradient(to bottom, #6a11cb, #2575fc); */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F8F8F8;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 233, 250, 1) 0%,
+    rgba(248, 248, 248, 1) 40%
+  );
 }
 
 .Container-wrapper {
@@ -12,16 +15,36 @@
   margin: 0 auto;
 }
 
-.Container-home p {
+.Intro h4 {
   font-size: 28px;
   font-weight: 500;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 30px;
+  color: #181b2e;
 }
 
-.Container-home h1 {
-  font-size: 130px;
-  font-weight: 500;
-  padding: 20px 0;
+.Main {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.Main h1 {
+  font-size: 150px; /* Ajustei o tamanho do h1 para que caiba bem ao lado do texto */
+  font-weight: 400;
+  padding: 0;
   margin: 0;
+  color: #181b2e;
+}
+
+.Profile-img {
+  max-width: 200px; /* Tamanho da imagem */
+  max-height: 200px;
+}
+
+.Content h2 {
+  font-size: 140px; /* Ajustei o tamanho do h1 para que caiba bem ao lado do texto */
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  color: #181b2e;
 }
