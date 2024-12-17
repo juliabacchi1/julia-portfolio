@@ -29,7 +29,7 @@
 }
 
 .Main h1 {
-  font-size: 150px; /* Ajustei o tamanho do h1 para que caiba bem ao lado do texto */
+  font-size: 150px;
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -37,12 +37,12 @@
 }
 
 .Profile-img {
-  max-width: 200px; /* Tamanho da imagem */
+  max-width: 200px;
   max-height: 200px;
 }
 
 .Content h2 {
-  font-size: 140px; /* Ajustei o tamanho do h1 para que caiba bem ao lado do texto */
+  font-size: 140px;
   font-weight: 400;
   padding: 0;
   margin: 0;

@@ -1,8 +1,8 @@
 section .About {
   background: linear-gradient(
     180deg,
-    rgba(248, 248, 248, 1) 60%,
-    rgba(236, 233, 250, 1) 100%
+    rgba(236, 233, 250, 1) 0%,
+    rgba(248, 248, 248, 1) 40%
   );
   margin: 0 auto;
 }
@@ -18,41 +18,61 @@ section .About {
   align-items: center;
 }
 
-.About-hero h3 {
-  font-size: 30px;
-}
-
 .About-hero h1 {
   font-size: 140px;
   font-weight: 500;
   margin: 0;
 }
 
-.RotatingText-container {
-  font-size: 140px;
-  margin: 50px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.About-hero h3 {
+  font-size: 30px;
 }
 
 .About-main {
   display: flex;
-  margin: 50px;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 60px;
   gap: 60px;
 }
 
-.About-me h4 {
+.About-description,
+.About-certificates {
+  width: 50%;
+}
+
+.About-description h4,
+.About-certificates h4 {
   font-size: 35px;
   font-weight: 500;
   letter-spacing: 1.5px;
   margin: 0;
 }
 
-.About-me p {
+.About-description p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1.5px;
+  line-height: 2;
+}
+
+.Map {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.Map p,
+.Map a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 2;
+  margin: 0;
+}
+
+.Map a {
+  text-decoration: none;
+  text-align: center;
 }

@@ -33,7 +33,6 @@ function Hero() {
                   className="resume-image"
                 />
                 <p className="download-text">Download Resume</p>{" "}
-                {/* Frase que aparece no hover */}
               </motion.a>
             </motion.div>
           </div>

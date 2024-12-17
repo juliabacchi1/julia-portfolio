@@ -1,6 +1,5 @@
 section .Contact {
-  /* background-color: #EBF5F3; */
-  background: linear-gradient(
+background: linear-gradient(
     180deg,
     rgba(221, 218, 242, 1) 0%,
     rgba(248, 248, 248, 1) 100%

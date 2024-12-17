@@ -11,7 +11,7 @@ nav {
     rgba(236, 233, 250, 0) 100%
   );
   align-items: center;
-  transition: background-color 0.3s ease, height 0.3s ease; /* Transição suave */
+  transition: background-color 0.3s ease, height 0.3s ease;
   position: fixed; /* Fixa o nav no topo */
   top: 0;
   left: 0;
