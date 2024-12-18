@@ -15,11 +15,16 @@
   margin: 0 auto;
 }
 
+.Intro h4,
+.Main h1,
+.Content h2 {
+  color: var(--text-color);
+}
+
 .Intro h4 {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
-  color: #181b2e;
 }
 
 .Main {
@@ -28,23 +33,22 @@
   gap: 35px;
 }
 
-.Main h1 {
-  font-size: 150px;
+.Main h1,
+.Content h2 {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  color: #181b2e;
+}
+
+.Main h1 {
+  font-size: 150px;
+}
+
+.Content h2 {
+  font-size: 140px;
 }
 
 .Profile-img {
   max-width: 200px;
   max-height: 200px;
-}
-
-.Content h2 {
-  font-size: 140px;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  color: #181b2e;
 }

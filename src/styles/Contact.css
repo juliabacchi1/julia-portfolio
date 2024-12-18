@@ -15,6 +15,8 @@ background: linear-gradient(
 
 .Container-contact h3 {
   font-size: 100px;
+  color: var(--text-color);
+  margin-bottom: 0;
 }
 
 .Info-contact {
@@ -23,10 +25,10 @@ background: linear-gradient(
 }
 
 button.Info-button {
-  background: white;
+  background: rgba(255, 255, 255);
   padding: 15px 40px;
   border: none;
-  color: #3a3d53;
+  color: var(--text-color-secondary);
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -45,7 +47,7 @@ button.Info-button:after {
 button.Info-button:hover {
   padding: 15px 45px;
   letter-spacing: 2px;
-  background: #f0f0f0;
+  background: rgba(240, 240, 240);
 }
 
 a .Info-link {
@@ -60,10 +62,10 @@ a .Info-link {
 
 .Icon {
   font-size: 24px;
-  color: #3a3d53;
+  color: var(--text-color-secondary);
   transition: color 0.3s;
 }
 
 .Icon:hover {
-  color: #ff6600;
+  color: var(--accent-color);
 }

@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #6a5acd;
+  --secondary-color: #f8f8f8;
+  --accent-color: #ff6600;
+  --text-color: #181b2e;
+  --text-color-secondary: #3a3d53;
+  --background-color: #ece9fa;
+  --box-shadow: -8px 10px 25px -12px rgba(0, 0, 0, 0.62);
+}

@@ -63,7 +63,7 @@ const CertificateList = () => {
             </div>
             <div>
               <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                Link
+                Details ⇲
               </a>
             </div>
           </div>

@@ -30,7 +30,7 @@ section .Hero {
 .Container-intro h3 {
   font-size: 30px;
   font-weight: 400;
-  color: #3a3d53;
+  color: var(--text-color-secondary);
   line-height: 1.8;
 }
 
@@ -64,7 +64,7 @@ section .Hero {
 
 .download-card:hover .download-text {
   display: block;
-  color: #ff6600;
+  color: var(--accent-color);
 }
 
 .Read-more {
@@ -77,7 +77,7 @@ section .Hero {
   justify-content: center;
   padding: 15px 30px;
   background: #3a3d53;
-  color: white;
+  color: rgba(255, 255, 255);
   cursor: pointer;
   border: none;
   border-radius: 50px;
@@ -95,7 +95,7 @@ section .Hero {
 }
 
 .Button-read:hover {
-  background: #ff6600;
+  background: var(--accent-color);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 

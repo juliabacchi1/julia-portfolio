@@ -62,19 +62,29 @@ function Navbar() {
 
   // Função para mudar o link ativo e lidar com navegação
   const handleLinkClick = (link) => {
-    setActiveLink(link); // Atualiza o link ativo ao clicar
+    setActiveLink(link);
 
-    if (link.startsWith("#")) {
+    if (link === "about") {
+      if (location.pathname !== "/about") {
+        // Navega para a rota About
+        navigate("/about");
+      } else {
+        // Já está na página About, rola para o início
+        scrollToAnchor("about");
+      }
+    } else if (link.startsWith("#")) {
+      // Lida com âncoras na página inicial
       const anchor = link.slice(1);
 
       if (location.pathname !== "/") {
         navigate("/", { replace: true });
-        setTimeout(() => scrollToAnchor(anchor), 100); // Aguarda o redirecionamento antes de rolar
+        setTimeout(() => scrollToAnchor(anchor), 100);
       } else {
-        scrollToAnchor(anchor); // Rola para a âncora se já estiver na Home
+        scrollToAnchor(anchor);
       }
     } else {
-      navigate(link); // Navega para as páginas (não âncoras)
+      // Navega para outras rotas
+      navigate(link);
     }
   };
 

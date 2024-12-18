@@ -61,11 +61,11 @@ section .Work {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255);
   border-radius: 20px;
   padding: 60px;
   z-index: 2;
-  box-shadow: -8px 10px 25px -12px rgba(0, 0, 0, 0.62);
+  box-shadow: var(--box-shadow);
   width: 360px;
   height: 340px;
 }
@@ -106,30 +106,37 @@ section .Work {
   text-decoration: none;
 }
 
+.Live,
+.Work-block p {
+  font-weight: 400;
+}
+
 .Live {
   font-size: 17px;
   padding: 10px 10px 10px 0;
-  font-weight: 400;
-  color: #040404;
+  color: rgba(4, 4, 4);
 }
 
-h2 {
-  font-size: 60px;
-  margin-bottom: 40px;
-  font-weight: 500;
-  padding-left: 65px;
-}
-
-h3 {
-  font-size: 54px;
-  margin: 10px 0;
-  font-weight: 500;
-}
-
-p {
+.Work-block p {
   font-size: 16px;
   margin: 20px 0;
   line-height: 1.8;
-  font-weight: 400;
-  color: #3a3d53;
+  color: var(--text-color-secondary);
+}
+
+.Container-work h2,
+.Content-wrapper h3 {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.Container-work h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  padding-left: 65px;
+}
+
+.Content-wrapper h3 {
+  font-size: 54px;
+  margin: 10px 0;
 }
