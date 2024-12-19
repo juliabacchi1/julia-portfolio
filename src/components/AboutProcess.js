@@ -9,25 +9,25 @@ const cards = [
   {
     title: "My Process",
     content:
-      "1. Design & Prototyping 2. Discovery & Planning 3. Launch & Deployment 4. Ongoing Support",
+      "I turn ideas into clear visuals, plan with purpose, deliver polished solutions, and ensure continuous care for seamless growth.",
     image: Process1,
   },
   {
     title: "Multiplatform Approach",
     content:
-      "I design solutions that work seamlessly across web, mobile, and emerging digital platforms, with a focus on user-centered experiences.",
+      "I design solutions that work across web, mobile, and emerging digital platforms, with a focus on user-centered experiences.",
     image: Process2,
   },
   {
     title: "Driven by Results",
     content:
-      "I prioritize delivering completed projects that solve real problems and drive meaningful impact.",
+      "I focus on delivering measurable outcomes, ensuring every project achieves its goals and creates real value.",
     image: Process3,
   },
   {
     title: "Creative & Custom Designs",
     content:
-      "I craft personalized designs tailored to your brand's identity, ensuring every detail speaks to your vision and values.",
+      "I craft designs by exploring inspirations and connecting ideas, ensuring that every detail reflects the desired goal.",
     image: Process4,
   },
 ];

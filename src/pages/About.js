@@ -43,6 +43,7 @@ function About() {
         </div>
         <AboutProcess />
       </div>
+      <div className="Transition-gradient"></div>
       <Contact />
     </section>
   );

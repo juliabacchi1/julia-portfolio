@@ -147,7 +147,7 @@
 
 .Card img {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 300px;
 }
 
 .Progress-bar {
@@ -170,4 +170,14 @@
 .Wrap-content p,
 .Wrap-content img {
   width: 50%;
+}
+
+.Transition-gradient {
+  height: 100px; /* Altura do gradiente */
+  background: linear-gradient(
+    180deg,
+    rgba(221, 218, 242, 1) 100%,  /* Cor final do About (visível na maior parte) */
+    rgba(236, 233, 250, 1) 80%,  /* Transição intermediária */
+    rgba(248, 248, 248, 1) 0%  /* Cor inicial do Contact (visível no final) */
+  );
 }
