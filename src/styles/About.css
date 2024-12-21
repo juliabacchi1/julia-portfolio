@@ -1,8 +1,8 @@
 .About {
   background: linear-gradient(
     180deg,
-    rgba(236, 233, 250, 1) 100%,
-    rgba(221, 218, 242) 100%
+    rgba(236, 233, 250, 1) 0%,
+    rgba(221, 218, 242) 70%
   );
   margin: 0 auto;
   padding: 170px 0 0 0;
@@ -95,28 +95,36 @@
 
 .About-process {
   text-align: center;
-  padding: 2rem;
+  padding: 50px;
   overflow: hidden; /* Evita rolagem inesperada */
   position: relative;
 }
 
 .About-process h4 {
-  text-align: center;
   color: var(--text-color);
-  font-size: 45px;
+  font-size: 60px;
   font-weight: 500;
   letter-spacing: 1.5px;
-  padding-bottom: 40px;
+  padding: 30px;
+  margin: 0;
 }
 
 .About-process h5 {
-  text-align: center;
   color: var(--text-color);
   font-size: 35px;
   font-weight: 500;
   letter-spacing: 1.5px;
-  margin: 20px;
-  padding: 10px;
+  margin: 15px;
+  padding: 0;
+}
+
+.About-process h6 {
+  color: var(--text-color-secondary);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .About-process p {
@@ -133,6 +141,7 @@
   flex-direction: column;
   align-items: center;
   gap: 100px;
+  margin: 40px;
 }
 
 .Card {
@@ -176,8 +185,9 @@
   height: 100px; /* Altura do gradiente */
   background: linear-gradient(
     180deg,
-    rgba(221, 218, 242, 1) 100%,  /* Cor final do About (visível na maior parte) */
-    rgba(236, 233, 250, 1) 80%,  /* Transição intermediária */
-    rgba(248, 248, 248, 1) 0%  /* Cor inicial do Contact (visível no final) */
+    rgba(221, 218, 242, 1) 100%,
+    /* Cor final do About (visível na maior parte) */ rgba(236, 233, 250, 1) 80%,
+    /* Transição intermediária */ rgba(248, 248, 248, 1) 0%
+      /* Cor inicial do Contact (visível no final) */
   );
 }

@@ -55,7 +55,7 @@ section .Hero {
 .download-text {
   display: none;
   position: absolute;
-  top: 42%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;

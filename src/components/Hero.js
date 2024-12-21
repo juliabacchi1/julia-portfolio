@@ -32,7 +32,7 @@ function Hero() {
                   alt="Computer with Resume"
                   className="resume-image"
                 />
-                <p className="download-text">Download Resume</p>{" "}
+                <p className="download-text">Download Resume</p>
               </motion.a>
             </motion.div>
           </div>

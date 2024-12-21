@@ -21,13 +21,13 @@ const cards = [
   {
     title: "Driven by Results",
     content:
-      "I focus on delivering measurable outcomes, ensuring every project achieves its goals and creates real value.",
+      "I focus on delivering measurable outcomes, ensuring every project achieves its goals, exceeds expectations, and creates real value.",
     image: Process3,
   },
   {
     title: "Creative & Custom Designs",
     content:
-      "I craft designs by exploring inspirations and connecting ideas, ensuring that every detail reflects the desired goal.",
+      "I craft designs by exploring inspirations and connecting ideas, ensuring that every detail reflects the dreamed objective.",
     image: Process4,
   },
 ];
@@ -43,7 +43,8 @@ const AboutProcess = () => {
 
   return (
     <div className="About-process">
-      <h4>Why work with me</h4>
+      <h4>How I make a difference</h4>
+      <h6>Explore the key reasons why I can help bring your ideas to life</h6>
 
       {/* Barra de progresso */}
       <motion.div
@@ -62,7 +63,7 @@ const AboutProcess = () => {
             initial={{ opacity: 0, y: 50 }} // Começa invisível e deslocado
             whileInView={{ opacity: 1, y: 0 }} // Animação ao entrar na viewport
             viewport={{ once: true, amount: 0.5 }} // Só anima quando 50% visível
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <h5>{card.title}</h5>
             <div className="Wrap-content">
