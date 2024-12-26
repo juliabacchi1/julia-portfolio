@@ -83,7 +83,7 @@ const Post = () => {
   useEffect(() => {
     const fetchedPost = fakePosts.find((p) => p.id === parseInt(id));
     setPost(fetchedPost);
-  }, [id]);
+  }, [id, fakePosts]);
 
   if (!post) {
     return <div>Post not found</div>;
