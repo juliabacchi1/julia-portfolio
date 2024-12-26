@@ -80,13 +80,14 @@ const Post = () => {
     },
   ];
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    console.log("ID capturado:", id);
-    const fetchedPost = fakePosts.find((p) => p.id === parseInt(id));
-    console.log("Post encontrado:", fetchedPost);
-    setPost(fetchedPost);
-  }, [id]);
+    const foundPost = fakePosts.find((p) => p.id === Number(id));
+    if (!foundPost) {
+      navigate("/404"); // Redireciona para página de erro se o post não for encontrado
+    } else {
+      setPost(foundPost);
+    }
+  }, [id, navigate]);
 
   if (!post) {
     return <div>Post not found</div>;
