@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/Post.css";
 import PostCareer from "../assets/images/Post-career.png";
@@ -14,7 +14,7 @@ const Post = () => {
   const [post, setPost] = useState(null);
   const navigate = useNavigate();
 
-  const fakePosts = [
+  const fakePostsData = [
     {
       id: 7,
       title: "Breaking barriers: We women",
@@ -79,6 +79,10 @@ const Post = () => {
       image: PostCareer,
     },
   ];
+
+  const fakePosts = useMemo(() => {
+    return fakePostsData.map((post) => ({ ...post })); // Avoid mutating original data
+  }, [fakePostsData]);
 
   useEffect(() => {
     const fetchedPost = fakePosts.find((p) => p.id === parseInt(id));
