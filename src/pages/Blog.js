@@ -13,6 +13,7 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    console.log("Setting posts:", posts);
     setPosts([
       {
         id: 7,
@@ -78,7 +79,7 @@ const Blog = () => {
         image: PostCareer,
       },
     ]);
-  }, []);
+  }, [posts]);
 
   return (
     <div className="container">

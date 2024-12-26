@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/Post.css";
 import PostCareer from "../assets/images/Post-career.png";
@@ -14,7 +14,7 @@ const Post = () => {
   const [post, setPost] = useState(null);
   const navigate = useNavigate();
 
-  const fakePostsData = [
+  const fakePosts = [
     {
       id: 7,
       title: "Breaking barriers: We women",
@@ -80,14 +80,13 @@ const Post = () => {
     },
   ];
 
-  const fakePosts = useMemo(() => {
-    return fakePostsData.map((post) => ({ ...post })); // Avoid mutating original data
-  }, [fakePostsData]);
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    console.log("ID capturado:", id);
     const fetchedPost = fakePosts.find((p) => p.id === parseInt(id));
+    console.log("Post encontrado:", fetchedPost);
     setPost(fetchedPost);
-  }, [id, fakePosts]);
+  }, [id]);
 
   if (!post) {
     return <div>Post not found</div>;
