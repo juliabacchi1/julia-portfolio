@@ -67,3 +67,49 @@ nav .Links {
   flex-grow: 1;
   margin-right: 50px;
 }
+
+/* Ocultar o botão de menu em telas maiores */
+.menu-toggle {
+  display: none;
+}
+
+/* Mostrar o botão de menu apenas em telas pequenas */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px; /* Ajuste de padding para telas menores */
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 40px;
+  }
+
+  .Links ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: none;
+    width: 100%;
+    padding: 20px; /* Padding ajustado */
+    margin: 0; /* Remover margem */
+  }
+
+  .Links.open ul {
+    display: flex;
+  }
+
+  .Links ul li {
+    margin: 10px 0;
+  }
+
+  .Links ul li a {
+    padding: 10px 15px;
+  }
+}

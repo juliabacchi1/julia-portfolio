@@ -58,11 +58,12 @@ function Work() {
         <h2>Selected projects</h2>
         <div className="Container-projects">
           {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              project={project}
-              projectImage={projectImages[project.image]}
-            />
+            <div key={index} className="Container-project">
+              <ProjectCard
+                project={project}
+                projectImage={projectImages[project.image]}
+              />
+            </div>
           ))}
         </div>
       </div>

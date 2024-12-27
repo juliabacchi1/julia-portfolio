@@ -16,37 +16,37 @@ const Blog = () => {
     setPosts([
       {
         id: 7,
-        title: "Breaking barriers: We women",
+        title: "And about AI?",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Exploring the transformative impact of artificial intelligence in 2024 and beyond.",
+        date: "14/12/2024",
         name: "• Julia Bacchi •",
         image: PostAi,
       },
       {
         id: 6,
-        title: "Breaking barriers: We women",
+        title: "The power of purpose",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "What turns dreams into action? Discover how finding your WHY can transform your journey.",
+        date: "25/11/2024",
         name: "• Julia Bacchi •",
         image: PostPurpose,
       },
       {
         id: 5,
-        title: "Breaking barriers: We women",
+        title: "Embracing your inner coder",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Overcome imposter syndrome and own your coding journey with confidence and resilience.",
+        date: "18/11/2024",
         name: "• Julia Bacchi •",
         image: PostImpostor,
       },
       {
         id: 4,
-        title: "Breaking barriers: We women",
+        title: "Building bridges with APIs",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "The backbone of modern development, enabling seamless connections and empowering code.",
+        date: "01/11/2024",
         name: "• Julia Bacchi •",
         image: PostBridge,
       },
@@ -54,8 +54,8 @@ const Blog = () => {
         id: 3,
         title: "Breaking barriers: We women",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Women in programming are breaking norms and shaping a more inclusive, innovative tech future.",
+        date: "02/10/2024",
         name: "• Julia Bacchi •",
         image: PostWoman,
       },
@@ -64,7 +64,7 @@ const Blog = () => {
         title: "I wanna be a programmer",
         description:
           "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech.",
-        date: "01/01/2024",
+        date: "30/08/2024",
         name: "• Julia Bacchi •",
         image: PostBegginer,
       },
@@ -73,7 +73,7 @@ const Blog = () => {
         title: "This is about change!",
         description:
           "Taking the leap into a new career path, where change leads to growth and opportunity.",
-        date: "20/12/2024",
+        date: "28/07/2024",
         name: "• Julia Bacchi •",
         image: PostCareer,
       },

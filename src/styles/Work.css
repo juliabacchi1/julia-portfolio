@@ -15,9 +15,9 @@ section .Work {
 .Container-projects {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   padding: 70px;
   border-radius: 20px;
   overflow: hidden;
@@ -30,6 +30,15 @@ section .Work {
   width: 100%;
   max-width: 1200px;
   position: relative;
+}
+
+.ProjectCard {
+  display: flex;
+  flex-direction: column;
+  width: 48%; /* Ajuste o tamanho para ser responsivo */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Image-wrapper {
@@ -139,4 +148,113 @@ section .Work {
 .Content-wrapper h3 {
   font-size: 54px;
   margin: 10px 0;
+}
+
+/* Estilos existentes mantidos aqui */
+
+/* Ajustes para telas menores que 1024px (tablets e desktops pequenos) */
+@media (max-width: 1024px) {
+  .Container-work {
+    margin: 0 50px;
+  }
+
+  .Container-projects {
+    gap: 100px; /* Reduz o espaçamento entre os projetos */
+    padding: 50px;
+  }
+
+  .Content-wrapper {
+    width: 300px; /* Reduz o tamanho do conteúdo */
+    height: 300px;
+    padding: 40px; /* Reduz padding */
+  }
+
+  .Content-wrapper h3 {
+    font-size: 36px; /* Fonte menor */
+  }
+
+  .Image-wrapper img {
+    width: 500px; /* Ajusta o tamanho da imagem */
+    height: 490px;
+  }
+}
+
+/* Ajustes para telas menores que 768px (tablets menores e smartphones grandes) */
+@media (max-width: 768px) {
+  .Container-work {
+    margin: 0;
+  }
+
+  .Container-projects {
+    gap: 50px; /* Menor espaçamento entre os projetos */
+    padding: 10px; /* Menor padding */
+  }
+
+  .Container-project {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
+  }
+
+  .Content-wrapper {
+    width: 50%; /* Reduz o tamanho do card */
+    height: 50%;
+  }
+
+  .Image-wrapper {
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  .Content-wrapper h3 {
+    font-size: 28px; /* Fonte ainda menor */
+  }
+
+  .Container-work h2 {
+    font-size: 40px; /* Título menor */
+    padding-left: 20px;
+  }
+
+  .Thumbnail-category {
+    display: none;
+  }
+}
+
+/* Ajustes para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  .Container-work {
+    padding: 10px; /* Padding mínimo */
+  }
+
+  .Container-projects {
+    gap: 20px; /* Menor espaçamento entre os projetos */
+    padding: 0;
+  }
+
+  .Container-project {
+    flex-direction: column; /* Organiza os itens em coluna */
+  }
+
+  .Content-wrapper {
+    width: 100%; /* Card ocupa largura total */
+    height: auto;
+    padding: 20px; /* Ajusta o padding */
+  }
+
+  .Image-wrapper {
+    width: 100%;
+    opacity: 0.7; /* Diminui a opacidade para dar um efeito apagado */
+  }
+
+  .Content-wrapper h3 {
+    font-size: 20px; /* Reduz ainda mais o tamanho da fonte */
+  }
+
+  .Container-work h2 {
+    font-size: 30px; /* Fonte menor */
+    padding-left: 10px;
+  }
+
+  .Thumbnail-category {
+    display: none; /* Esconde a categoria na versão mobile */
+  }
 }

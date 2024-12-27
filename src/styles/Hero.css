@@ -102,3 +102,83 @@ section .Hero {
 .Button-read:hover .Read-icon {
   transform: translateX(5px);
 }
+
+/* Ajustes para telas menores que 1024px (tablets e desktops pequenos) */
+@media (max-width: 1024px) {
+  .Container-hero {
+    margin: 0 50px; /* Reduzir margens */
+  }
+
+  .Container-intro {
+    gap: 40px; /* Diminuir o espaçamento */
+  }
+
+  .Container-intro h3 {
+    font-size: 24px; /* Diminuir fonte */
+  }
+
+  .resume-image {
+    max-width: 90%; /* Ajustar o tamanho da imagem */
+  }
+}
+
+/* Ajustes para telas menores que 768px (tablets menores e smartphones grandes) */
+@media (max-width: 768px) {
+  section .Hero {
+    padding: 10px;
+  }
+
+  .Container-hero {
+    margin: 0 10px; /* Margens menores */
+  }
+
+  .Container-intro {
+    grid-template-columns: 1fr; /* Alinhamento vertical */
+    text-align: center; /* Centralizar textos */
+    gap: 0;
+  }
+
+  .Container-intro h3 {
+    font-size: 20px; /* Fonte menor */
+    margin: 0;
+  }
+
+  .resume-image {
+    transition: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume-image:hover {
+    transform: scale(1);
+  }
+
+  .Button-read {
+    width: 100%; /* Botão ocupa a largura disponível */
+    padding: 10px; /* Reduzir padding */
+    font-size: 14px; /* Fonte menor */
+  }
+}
+
+/* Ajustes para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  .Container-hero {
+    padding: 20px; /* Reduzir o padding */
+  }
+
+  .Container-intro h3 {
+    font-size: 18px; /* Fonte ainda menor */
+  }
+
+  .resume-image {
+    max-width: 100%; /* Imagem ocupa a largura total */
+  }
+
+  .download-card {
+    flex-direction: column; /* Alinhar verticalmente */
+  }
+
+  .Button-read {
+    font-size: 12px; /* Fonte menor */
+  }
+}

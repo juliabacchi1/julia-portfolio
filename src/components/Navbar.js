@@ -3,12 +3,12 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  const [activeLink, setActiveLink] = useState("home"); // Definir o estado de activeLink
+  const [activeLink, setActiveLink] = useState("home"); // Estado do link ativo
   const [isSticky, setIsSticky] = useState(false);
-  const location = useLocation(); // Usando useLocation para pegar o caminho atual
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado do menu hambúrguer
+  const location = useLocation();
   const navigate = useNavigate();
 
-  // Função para rolar até a âncora
   const scrollToAnchor = (anchor) => {
     const element = document.getElementById(anchor);
     if (element) {
@@ -16,7 +16,6 @@ function Navbar() {
     }
   };
 
-  // Função para adicionar a classe sticky ao rolar a página
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsSticky(true);
@@ -26,27 +25,22 @@ function Navbar() {
   };
 
   useEffect(() => {
-    // Lógica para adicionar o "sticky" ao navbar
     window.addEventListener("scroll", handleScroll);
 
-    // Limpeza do event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   useEffect(() => {
-    // Atualiza a navegação com base na localização (usando pathname)
     const sections = document.querySelectorAll("section");
-    const options = { root: null, threshold: 0.2 }; // 20% da seção visível
+    const options = { root: null, threshold: 0.2 };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          // Atualiza o link ativo com base na seção visível
           if (location.pathname === "/") {
-            // Só atualiza se estiver na página inicial
             setActiveLink(id);
           }
         }
@@ -56,24 +50,20 @@ function Navbar() {
     sections.forEach((section) => observer.observe(section));
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section)); // Remove observador
+      sections.forEach((section) => observer.unobserve(section));
     };
   }, [location]);
 
-  // Função para mudar o link ativo e lidar com navegação
   const handleLinkClick = (link) => {
     setActiveLink(link);
 
     if (link === "about") {
       if (location.pathname !== "/about") {
-        // Navega para a rota About
         navigate("/about");
       } else {
-        // Já está na página About, rola para o início
         scrollToAnchor("about");
       }
     } else if (link.startsWith("#")) {
-      // Lida com âncoras na página inicial
       const anchor = link.slice(1);
 
       if (location.pathname !== "/") {
@@ -83,9 +73,13 @@ function Navbar() {
         scrollToAnchor(anchor);
       }
     } else {
-      // Navega para outras rotas
       navigate(link);
     }
+  };
+
+  // Alterna a visibilidade do menu hambúrguer
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -101,7 +95,9 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="Links">
+
+      {/* Alterar a classe com base no estado do menu hambúrguer */}
+      <div className={`Links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <a
@@ -147,6 +143,13 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+      <button
+        className="menu-toggle"
+        onClick={toggleMenu} // Alterna o estado ao clicar
+      >
+        &#9776; {/* Ícone de hambúrguer */}
+      </button>
     </nav>
   );
 }

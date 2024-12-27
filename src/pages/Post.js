@@ -8,6 +8,8 @@ import PostBridge from "../assets/images/Post-bridge.png";
 import PostImpostor from "../assets/images/Post-impostor.png";
 import PostPurpose from "../assets/images/Post-purpose.png";
 import PostAi from "../assets/images/Post-ai.png";
+import Descomplicando from "../assets/images/Descomplicando-manual.pdf";
+import Simplifying from "../assets/images/Simplifying-manual.pdf";
 
 const Post = () => {
   const { id } = useParams(); // Captura o ID da URL
@@ -18,37 +20,37 @@ const Post = () => {
     const fakePosts = [
       {
         id: 7,
-        title: "Breaking barriers: We women",
+        title: "And about AI?",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Exploring the transformative impact of artificial intelligence in 2024 and beyond.",
+        date: "14/12/2024",
         name: "• Julia Bacchi •",
         image: PostAi,
       },
       {
         id: 6,
-        title: "Breaking barriers: We women",
+        title: "The power of purpose",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "What turns dreams into action? Discover how finding your WHY can transform your journey.",
+        date: "25/11/2024",
         name: "• Julia Bacchi •",
         image: PostPurpose,
       },
       {
         id: 5,
-        title: "Breaking barriers: We women",
+        title: "Embracing your inner coder",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Overcome imposter syndrome and own your coding journey with confidence and resilience.",
+        date: "18/11/2024",
         name: "• Julia Bacchi •",
         image: PostImpostor,
       },
       {
         id: 4,
-        title: "Breaking barriers: We women",
+        title: "Building bridges with APIs",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "The backbone of modern development, enabling seamless connections and empowering code.",
+        date: "01/11/2024",
         name: "• Julia Bacchi •",
         image: PostBridge,
       },
@@ -56,8 +58,8 @@ const Post = () => {
         id: 3,
         title: "Breaking barriers: We women",
         description:
-          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-        date: "01/01/2024",
+          "Women in programming are breaking norms and shaping a more inclusive, innovative tech future.",
+        date: "02/10/2024",
         name: "• Julia Bacchi •",
         image: PostWoman,
       },
@@ -66,7 +68,7 @@ const Post = () => {
         title: "I wanna be a programmer",
         description:
           "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech.",
-        date: "01/01/2024",
+        date: "30/08/2024",
         name: "• Julia Bacchi •",
         image: PostBegginer,
       },
@@ -75,7 +77,7 @@ const Post = () => {
         title: "This is about change!",
         description:
           "Taking the leap into a new career path, where change leads to growth and opportunity.",
-        date: "20/12/2024",
+        date: "28/07/2024",
         name: "• Julia Bacchi •",
         image: PostCareer,
       },
@@ -184,30 +186,26 @@ const Post = () => {
       )}
       {post.id === 2 && (
         <p>
-          Diving into the world of programming: Turning confusion into
-          confidence
-          <br />
-          Starting out in programming can feel like stepping into a maze with no
+          Getting started in programming can be like entering a maze without
           map. The sheer volume of information, the seemingly endless
-          technologies to learn, and the buzzwords thrown around can be
-          overwhelming. HTML, CSS, JavaScript, frameworks, libraries, APIs—where
-          do you even begin? The frustration of not knowing where to start is
-          something almost every beginner faces.
+          technologies to learn, and the buzzwords used can be very heavy. HTML,
+          CSS, JavaScript, frameworks, libraries, APIs — where do you even
+          start? The frustration of not knowing where to start is something
+          almost every beginner faces.
           <br />
-          But let me tell you a little secret: it's okay to feel lost. Every
-          developer, no matter how experienced, started exactly where you are.
-          They, too, stared at their screens, unsure of what to Google, baffled
-          by the jargon, and overwhelmed by tutorials that assumed too much.
+          But let me tell you: It's okay to feel lost. Every developer, no
+          matter how experienced, started exactly where you are. They, too,
+          stared at their screens, unsure of what to Google, perplexed by what
+          jargon and weighed down by tutorials that assumed too much.
           <br />
           <br />
-          The Struggle of Beginnings
+          <strong>The struggle of beginnings</strong>
           <br />
           The hardest part of learning programming isn't writing your first line
-          of code—it's understanding what you need to learn and in what order.
-          Do you start with HTML and CSS? Should you dive straight into
-          JavaScript? What about frameworks like React or tools like Git? It's
-          like trying to read a book where every page is written in a different
-          language.
+          of code, is understanding what you need to learn and in what order. Do
+          you start with HTML and CSS? Should you dive straight into JavaScript?
+          What about frameworks like React or tools like Git? It's like trying
+          to read a book where every page is written in a different language.
           <br />
           But here's the good news: you don't need to master everything at once.
           The beauty of programming lies in its incremental nature. You learn
@@ -215,61 +213,73 @@ const Post = () => {
           fitting together. What once felt impossible begins to make sense.
           <br />
           <br />
-          Why I Created "Simplifying Programming - Beginner"
+          <strong>Why I created "Simplifying Programming - Beginner"</strong>
           <br />
           When I first started my programming journey, I found myself
-          overwhelmed by scattered resources and unclear roadmaps. I often
+          overwhelmed by scattered resources and unclear roadmaps. I've often
           wished for a simple, straightforward guide that could walk me through
-          the basics—something that didn't assume I already knew the difference
-          between a tag and a class, or how JavaScript fits into the big picture
-          of web development.
+          the basics - something that didn't assume I already knew the
+          difference between a tag and a class, or how JavaScript fits into the
+          big picture of web development.
           <br />
           That's why I created Simplifying Programming - Beginner.
           <br />
-          This manual is designed to be a beginner's best friend—a clear,
+          This manual is designed to be a beginner's best friend: A clear,
           step-by-step guide to understanding the core technologies of web
           development: HTML, CSS, and JavaScript. Each section is carefully
           structured to break down complex concepts into digestible pieces,
           supported by practical examples you can try as you learn.
           <br />
           <br />
-          What's Inside the Manual?
+          <strong>What's inside the manual?</strong>
           <br />
           The material is crafted to:
           <br />
-          - Demystify the Basics: Start with foundational knowledge, explained
+          - Demystify the basics: Start with foundational knowledge, explained
           in simple terms.
           <br />
-          - Focus on Practical Learning: Each section includes real-life
+          - Focus on practical learning: Each section includes real-life
           examples to help you see the "why" behind the "how."
           <br />
-          - Build Confidence: By the end, you'll not only understand the
-          basics—you'll feel ready to take on your own projects.
+          - Build confidence: By the end, you'll not only understand the basics
+          - you'll feel ready to take on your own projects.
           <br />
           <br />
-          Learn at Your Own Pace
+          <strong>Learn at your own pace</strong>
           <br />
           To make your learning journey even more accessible, the complete
           manual is available for download in English and Portuguese, both as a
           website and PDF. Whether you prefer studying online or offline, you
           can choose the format that works best for you.
           <br />
-          - Open the Manual Online: Simplifying Programming - Beginner
+          <br />-{" "}
+          <a
+            href="https://simplifying-2qpqfs7.gamma.site/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open the Manual Online: Simplifying Programming - Beginner
+          </a>
+          <br />-{" "}
+          <a href={Descomplicando} target="_blank" rel="noopener noreferrer">
+            Download Manual in Portuguese (PDF)
+          </a>
+          <br />-{" "}
+          <a href={Simplifying} target="_blank" rel="noopener noreferrer">
+            Download Manual in English (PDF)
+          </a>
           <br />
-          - Download Manual in Portuguese (PDF)
           <br />
-          - Download Manual in English (PDF)
-          <br />
-          <br />
-          Your Journey Starts Here
+          <strong>Your journey starts here</strong>
           <br />
           Programming is a skill that opens doors to endless possibilities. It's
-          not about becoming an expert overnight—it's about taking that first
+          not about becoming an expert overnight: It's about taking that first
           step, one line of code at a time.
           <br />
           And now, you don't have to take that step alone. Simplifying
           Programming - Beginner is here to guide you, support you, and show you
           that even the most complicated concepts can be simplified.
+          <br />
           <br />
           So, let's turn confusion into confidence. Your programming journey
           starts now.
@@ -277,10 +287,278 @@ const Post = () => {
       )}
       {post.id === 3 && (
         <p>
-          Breaking barriers: We women are leading the way in technology, proving
-          that innovation knows no gender.
+          Women in programming are not only challenging the norms but also
+          paving the way for a more inclusive and innovative tech landscape.
+          Despite representing only 0.07% of the tech workforce in Brazil, the
+          future for women in technology is brighter than ever. Globally, the
+          McKinsey Global Institute projects that by 2030, greater gender
+          diversity in the tech sector could increase global productivity by up
+          to $12 trillion. This potential for economic growth underscores the
+          critical importance of bringing more women into technology.
+          <br />
+          <br /> In fact, companies that embrace diversity in leadership -
+          especially gender and ethnicity - are 33% more likely to outperform
+          their peers in profitability, according to McKinsey & Company's
+          Diversity Wins report. This proves that inclusion is not just the
+          right thing to do; it's also a smart business move. Women are not just
+          filling a quota: They are driving innovation and changing the future
+          of the tech industry.
+          <br />
+          <br />
+          As a woman in the tech world, I've seen firsthand how diverse teams
+          bring fresh ideas and perspectives to the table. The problems we
+          solve, the tools we build, and the way we approach challenges are all
+          influenced by the backgrounds we come from. It's not just about
+          "fitting in", but about pushing boundaries and creating something new
+          together.
+          <br />
+          <br />
+          The demand for technology professionals is skyrocketing, and the U.S.
+          Bureau of Labor Statistics projects a 13% growth in computer science
+          jobs by 2030, much faster than the average for other industries. As
+          more women enter this field, they are poised to shape the future of
+          emerging technologies, including Artificial Intelligence (AI). The
+          World Economic Forum reports that women's participation in AI has
+          grown 2.5% from 2015 to 2020, with further growth expected as more
+          women take the leap into this game-changing field.
+          <br />
+          <br /> Women in tech are leading the charge for a more diverse,
+          innovative, and prosperous future. As more women embrace the
+          challenges and opportunities of the tech world, the potential to
+          transform industries and economies grows exponentially.
         </p>
       )}
+      {post.id === 4 && (
+        <p>
+          APIs are the unsung heroes of modern development. They are the
+          invisible bridges connecting applications, enabling them to
+          communicate and work together in ways that make our digital world
+          function seamlessly.
+          <br />
+          In the ever-evolving world of technology, APIs (Application
+          Programming Interfaces) are the quiet force that powers many of the
+          tools and services we use every day. While it may seem like a complex
+          topic, APIs are simply a way for different software systems to talk to
+          each other and share data. Whether you're logging into a website using
+          your Google account, checking the weather on your phone, or making a
+          payment online, it's likely that an API is at work behind the scenes.
+          <br />
+          <br />
+          For beginners in programming, understanding APIs is a game-changer.
+          They open the door to endless possibilities, allowing you to integrate
+          various services, tools, and data sources into your own projects.
+          Learning how to use APIs means you can harness the power of platforms
+          like Google Maps, Twitter, and Stripe without having to build
+          everything from scratch.
+          <br />
+          But what makes APIs so incredible isn't just their functionality—it's
+          their potential to transform how we create. By leveraging APIs, we can
+          build faster, more efficient applications and focus on the unique
+          features that make our projects stand out. It's about working smarter,
+          not harder.
+          <br />
+          <br />
+          As a beginner, you might feel overwhelmed by the technical jargon
+          surrounding APIs, but the truth is, once you break them down and
+          understand their role, they become one of the most exciting parts of
+          coding. APIs empower you to take your projects to the next level,
+          connect them with other services, and even create something entirely
+          new. The possibilities are limitless, and with the right mindset, you
+          can start using APIs in your own work today.
+          <br />
+          <br />
+          <strong>Tips for Working with APIs:</strong>
+          <br />
+          <br />
+          1. Start with free APIs: There are many free and easy-to-use APIs that
+          are perfect for beginners.
+          <br />
+          Some popular ones include:
+          <br />- <strong>OpenWeatherMap:</strong> Get weather data for any
+          location around the world.
+          <br />- <strong>The Dog API:</strong> Fetch images and data about
+          different dog breeds (perfect for fun projects).
+          <br />- <strong>News API:</strong> Pull in the latest news articles
+          from a wide range of sources to add to your applications.
+          <br />- <strong>JokeAPI:</strong> Add some humor to your app by
+          integrating jokes into your projects.
+          <br />
+          <br />
+          2. Read the documentation carefully: Each API comes with documentation
+          that explains how to use it. Spend time getting familiar with the
+          setup, endpoints, and parameters. Most APIs offer tutorials or sample
+          code to help you get started.
+          <br />
+          <br />
+          3. Use Postman for testing: Postman is a fantastic tool for testing
+          APIs without writing a single line of code. It lets you make requests
+          and see the responses, which will help you understand how to interact
+          with an API before implementing it in your own project.
+          <br />
+          <br />
+          4. Keep API keys secure: Many APIs require an API key, which is
+          essentially a password that gives you access to the service. Always
+          keep your API keys safe and avoid hardcoding them directly in your
+          app's code. Use environment variables to keep them secure.
+          <br />
+          <br />
+          5. Be mindful of rate limits: Some APIs limit the number of requests
+          you can make in a given period. This is especially important when
+          you're testing or building prototypes. Keep track of these limits to
+          avoid hitting them and disrupting your workflow.
+          <br />
+          <br />
+          <strong>Conclusion:</strong>
+          <br />
+          <br />
+          So, whether you're building a simple weather app or developing
+          something more complex, learning how to use APIs is one of the best
+          ways to expand your programming toolkit. Start small, experiment, and
+          soon you'll realize that APIs aren't just a tool—they're the gateway
+          to creating more dynamic, interactive, and powerful applications.
+        </p>
+      )}
+      {post.id === 5 && (
+        <p>
+          Feeling like you're not "good enough"? You're not alone. Imposter
+          syndrome: The belief that you're a fraud or undeserving of your
+          accomplishments affects countless programmers, from beginners to
+          seasoned professionals. The good news? It's not a reflection of your
+          abilities but a sign of growth and ambition.
+          <br />
+          Imposter syndrome often shows up when you're learning something new or
+          stepping outside your comfort zone. It's that little voice whispering,
+          "You don't belong here." But the truth is, everyone starts somewhere,
+          and the best developers were once beginners too.
+          <br />
+          <br />
+          Here are some ways to tackle imposter syndrome and reclaim your
+          confidence:
+          <br />
+          <br />
+          1. <strong>Focus on progress, not perfection:</strong> Celebrate small
+          wins, like solving a tricky bug or completing a project. Every step
+          forward is proof that you're growing.
+          <br />
+          2. <strong>Remember you're not alone:</strong> Even tech giants like
+          Elon Musk or Sundar Pichai have expressed feelings of self-doubt.
+          Imposter syndrome is common, and it doesn't define your worth.
+          <br />
+          3. <strong>Seek Support:</strong> Join communities, connect with
+          peers, and share your journey. Sometimes, just hearing “me too” from
+          others can make a world of difference.
+          <br />
+          4. <strong>Learn from Failure:</strong> Mistakes are not setbacks;
+          they're opportunities to learn. Each misstep brings you closer to
+          mastering your craft.
+          <br />
+          5. <strong>Acknowledge Your Wins:</strong> Take time to reflect on how
+          far you've come. That project you thought was impossible last year?
+          You've done it now. That's real progress.
+          <br />
+          <br />
+          Coding is as much about persistence as it is about skill. The journey
+          isn't always easy, but every challenge you face is shaping you into a
+          stronger, more capable developer. Embrace the learning process, and
+          remember: you're not an imposter: You are a coder.
+        </p>
+      )}
+      {post.id === 6 && (
+        <p>
+          Purpose is the invisible thread that weaves meaning into our lives.
+          It's the spark that keeps us going when the path is uncertain, the
+          light that guides us through challenges, and the voice that whispers,
+          "Keep going, because this matters."
+          <br />
+          <br />
+          In a world full of noise and endless possibilities, purpose is our
+          anchor. It's not about having all the answers or following a perfect
+          plan. It's about knowing why you're on this journey. Purpose
+          transforms work into passion, struggles into lessons, and dreams into
+          reality.
+          <br />
+          For some, purpose is clear, a cause, a goal, or a calling that pulls
+          them forward. For others, it's discovered along the way, a mosaic
+          built piece by piece through experiences, mistakes, and reflection.
+          And that's okay.
+          <br />
+          <br />
+          <strong>"Purpose isn't a destination, it's a process!"</strong>
+          <br />
+          <br />
+          When you align with your purpose, everything changes. Work feels
+          lighter because it's no longer just about tasks, but it's about
+          impact. Success becomes more meaningful because it's tied to something
+          bigger than yourself. And even failures feel less daunting because
+          they're stepping stones on a purposeful path.
+          <br />
+          Purpose grows with you. It evolves as you learn, explore, and push
+          your boundaries. The key is to listen to your passions, to what
+          excites you, and to what breaks your heart. Often, purpose lies at the
+          intersection of what you love, what the world needs, and what you're
+          uniquely capable of doing.
+          <br />
+          <br />
+          So, whether you're coding a new app, solving a complex problem, or
+          simply taking the first steps toward a dream, remember: every action
+          infused with purpose has the power to change lives, including your
+          own.
+          <br />
+          Your journey doesn't have to be perfect. It just has to be purposeful.
+          Find your why, and let it lead you to places you've never imagined.
+        </p>
+      )}
+      {post.id === 7 && (
+        <p>
+          Artificial intelligence (AI) continues to revolutionize industries,
+          shaping a future that once seemed out of reach. In 2024, we've
+          witnessed remarkable advancements, cementing AI's role as a
+          cornerstone of modern society.
+          <br />
+          <br />
+          One standout achievement this year was AI's role in early cancer
+          detection. By enabling faster and more accurate diagnoses, AI has the
+          potential to save countless lives. In astronomy, AI contributed to the
+          groundbreaking discovery of liquid water on Mars, paving the way for
+          new explorations and insights into the cosmos.
+          <br />
+          However, with rapid adoption comes challenges. Studies show that AI is
+          set to impact nearly 60 million jobs across the U.S. and Mexico within
+          a year, highlighting the urgent need for workforce reskilling and
+          adaptability to evolving demands.
+          <br />
+          AI has also left a mark on content creation, with Brazil seeing a 30%
+          surge in the digital content market, transforming the way we consume
+          and create information.
+          <br />
+          <br />
+          Academically, AI took center stage, with two Nobel Prizes awarded for
+          groundbreaking AI related research, underscoring its multifaceted
+          influence on society.
+          <br />
+          These advancements emphasize the importance of a balanced approach to
+          AI, leveraging its benefits while addressing the ethical and societal
+          challenges it brings. As we move forward, it's vital to foster ongoing
+          discussions about AI's role, ensuring that its development contributes
+          to a more equitable and prosperous future.
+          <br />
+          Artificial intelligence isn't just a tool, but a transformative force
+          reshaping the boundaries of possibility. By embracing its potential
+          and tackling its challenges, we can build a tomorrow where technology
+          and humanity walk hand in hand toward progress.
+          <br />
+          <br />
+         <strong> Sources of Inspiration:</strong>
+          <br />
+          - Early cancer detection: transforming diagnostics.
+          <br />
+          - Workforce adaptation: tackling the impact on 60M jobs in the
+          Americas.
+          <br />- AI's pivotal role in space discoveries and content creation
+          growth.
+        </p>
+      )}
+
       <button className="back-button" onClick={() => navigate("/Blog")}>
         Back to Blog
       </button>

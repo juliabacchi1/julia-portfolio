@@ -13,6 +13,7 @@
 .Container-wrapper {
   max-width: 1020px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .Intro h4,
@@ -51,4 +52,61 @@
 .Profile-img {
   max-width: 200px;
   max-height: 200px;
+}
+
+/* Telas menores que 1200px */
+@media (max-width: 1200px) {
+  .Main h1 {
+    font-size: 120px;
+  }
+
+  .Content h2 {
+    font-size: 110px;
+  }
+
+  .Profile-img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+/* Telas menores que 768px */
+@media (max-width: 768px) {
+  .Main {
+    gap: 20px;
+  }
+
+  .Main h1 {
+    font-size: 80px;
+  }
+
+  .Content h2 {
+    font-size: 78px;
+  }
+
+  .Profile-img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+  .Intro h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Main h1 {
+    font-size: 60px;
+  }
+
+  .Content h2 {
+    font-size: 50px;
+  }
+
+  .Profile-img {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }

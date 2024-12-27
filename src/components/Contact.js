@@ -10,6 +10,29 @@ import Wave from "../components/Wave";
 import "../styles/Contact.css";
 
 function Contact() {
+  const socialLinks = [
+    {
+      href: "https://www.linkedin.com/in/juliabacchi/",
+      icon: faLinkedin,
+      label: "LinkedIn",
+    },
+    {
+      href: "https://github.com/juliabacchi1",
+      icon: faGithub,
+      label: "GitHub",
+    },
+    {
+      href: "https://x.com/juliabacchi",
+      icon: faTwitter,
+      label: "Twitter",
+    },
+    {
+      href: "https://wa.me/48991779743?text=Hi%20",
+      icon: faWhatsapp,
+      label: "WhatsApp",
+    },
+  ];
+
   return (
     <section id="contact" className="Contact">
       <div className="Container-contact">
@@ -20,42 +43,18 @@ function Contact() {
           </a>
         </div>
         <div className="Info-socials">
-          <a
-            className="Icon"
-            href="https://www.linkedin.com/in/juliabacchi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a
-            className="Icon"
-            href="https://github.com/juliabacchi1"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            className="Icon"
-            href="https://x.com/juliabacchi"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            className="Icon"
-            href="https://wa.me/48991779743?text=Hi%20"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} />
-          </a>
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              className="Icon"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.label}
+            >
+              <FontAwesomeIcon icon={link.icon} />
+            </a>
+          ))}
         </div>
       </div>
       <div className="Wave">

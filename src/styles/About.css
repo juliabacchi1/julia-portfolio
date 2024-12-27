@@ -191,3 +191,124 @@
       /* Cor inicial do Contact (visível no final) */
   );
 }
+
+@media (min-width: 1200px) {
+  .About-main {
+    padding: 200px 200px;
+    gap: 80px;
+  }
+
+  .About-hero h1 {
+    font-size: 160px; /* Títulos maiores */
+  }
+
+  .About-hero h3 {
+    font-size: 36px;
+  }
+
+  .About-description p {
+    font-size: 28px; /* Fonte maior */
+    line-height: 2.2;
+  }
+
+  .About-process h4 {
+    font-size: 70px; /* Ajuste para títulos grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .About-hero h1 {
+    font-size: 100px;
+  }
+
+  .About-hero h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .About-main {
+    flex-direction: column;
+    padding: 100px 20px; /* Reduz o padding */
+    gap: 40px;
+  }
+
+  .About-description,
+  .About-certificates {
+    width: 100%; /* Ocupa toda a largura */
+  }
+
+  .About-description p {
+    font-size: 18px; /* Fonte menor */
+    line-height: 1.8; /* Melhor espaçamento */
+  }
+
+  .About-process h4 {
+    font-size: 40px; /* Títulos menores */
+  }
+
+  .About-process h5 {
+    font-size: 28px;
+  }
+
+  .About-process h6 {
+    font-size: 20px;
+  }
+
+  .Card {
+    height: auto; /* Ajusta a altura dos cards */
+    padding: 1rem;
+  }
+
+  .Wrap-content p {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .About-hero h1 {
+    font-size: 80px; /* Título menor */
+  }
+
+  .About-hero h3 {
+    font-size: 20px; /* Subtítulo menor */
+    padding: 0 10px; /* Adiciona espaçamento interno */
+  }
+
+  .About-main {
+    padding: 50px 10px; /* Padding ainda menor */
+    gap: 20px; /* Reduz o gap */
+  }
+
+  .About-description p {
+    font-size: 16px; /* Texto menor */
+    line-height: 1.5;
+  }
+
+  .About-process h4 {
+    font-size: 30px; /* Ajusta título do processo */
+  }
+
+  .About-process h5 {
+    font-size: 24px;
+  }
+
+  .About-process h6 {
+    font-size: 18px;
+  }
+
+  .About-certificates-grid {
+    max-height: 200px; /* Reduz altura máxima */
+  }
+
+  .Card {
+    max-width: 100%; /* Ocupa toda a largura da tela */
+    padding: 1rem;
+    margin: 0 auto; /* Centraliza */
+  }
+
+  .Transition-gradient {
+    height: 50px; /* Reduz altura do gradiente */
+  }
+}
+
