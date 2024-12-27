@@ -234,15 +234,14 @@ section .Work {
     flex-direction: column; /* Organiza os itens em coluna */
   }
 
-  .Content-wrapper {
-    width: 100%; /* Card ocupa largura total */
-    height: auto;
-    padding: 20px; /* Ajusta o padding */
+   .Content-wrapper {
+    width: 50%; /* Reduz o tamanho do card */
+    height: 50%;
   }
 
   .Image-wrapper {
     width: 100%;
-    opacity: 0.7; /* Diminui a opacidade para dar um efeito apagado */
+    opacity: 0.8; /* Diminui a opacidade para dar um efeito apagado */
   }
 
   .Content-wrapper h3 {

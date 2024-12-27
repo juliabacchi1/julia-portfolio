@@ -310,5 +310,9 @@
   .Transition-gradient {
     height: 50px; /* Reduz altura do gradiente */
   }
+
+  .Wrap-content {
+    flex-direction: column;
+  }
 }
 
