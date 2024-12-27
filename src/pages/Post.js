@@ -14,73 +14,73 @@ const Post = () => {
   const [post, setPost] = useState(null);
   const navigate = useNavigate();
 
-  const fakePosts = [
-    {
-      id: 7,
-      title: "Breaking barriers: We women",
-      description:
-        "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostAi,
-    },
-    {
-      id: 6,
-      title: "Breaking barriers: We women",
-      description:
-        "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostPurpose,
-    },
-    {
-      id: 5,
-      title: "Breaking barriers: We women",
-      description:
-        "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostImpostor,
-    },
-    {
-      id: 4,
-      title: "Breaking barriers: We women",
-      description:
-        "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostBridge,
-    },
-    {
-      id: 3,
-      title: "Breaking barriers: We women",
-      description:
-        "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostWoman,
-    },
-    {
-      id: 2,
-      title: "I wanna be a programmer",
-      description:
-        "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech.",
-      date: "01/01/2024",
-      name: "• Julia Bacchi •",
-      image: PostBegginer,
-    },
-    {
-      id: 1,
-      title: "This is about change!",
-      description:
-        "Taking the leap into a new career path, where change leads to growth and opportunity.",
-      date: "20/12/2024",
-      name: "• Julia Bacchi •",
-      image: PostCareer,
-    },
-  ];
-
   useEffect(() => {
+    const fakePosts = [
+      {
+        id: 7,
+        title: "Breaking barriers: We women",
+        description:
+          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostAi,
+      },
+      {
+        id: 6,
+        title: "Breaking barriers: We women",
+        description:
+          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostPurpose,
+      },
+      {
+        id: 5,
+        title: "Breaking barriers: We women",
+        description:
+          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostImpostor,
+      },
+      {
+        id: 4,
+        title: "Breaking barriers: We women",
+        description:
+          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostBridge,
+      },
+      {
+        id: 3,
+        title: "Breaking barriers: We women",
+        description:
+          "Women in programming are not only challenging the norms, but also paving the way for a more inclusive and innovative tech landscape.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostWoman,
+      },
+      {
+        id: 2,
+        title: "I wanna be a programmer",
+        description:
+          "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech.",
+        date: "01/01/2024",
+        name: "• Julia Bacchi •",
+        image: PostBegginer,
+      },
+      {
+        id: 1,
+        title: "This is about change!",
+        description:
+          "Taking the leap into a new career path, where change leads to growth and opportunity.",
+        date: "20/12/2024",
+        name: "• Julia Bacchi •",
+        image: PostCareer,
+      },
+    ];
+
     const foundPost = fakePosts.find((p) => p.id === Number(id));
     if (!foundPost) {
       navigate("/404"); // Redireciona para página de erro se o post não for encontrado
