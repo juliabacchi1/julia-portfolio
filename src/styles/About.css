@@ -207,7 +207,31 @@
 }
 
 @media (max-width: 480px) {
-  .Transition-gradient {
-    height: 50px;
+  .About-main,
+  .About-process {
+    padding: 20px;
+  }
+
+  .Map p {
+    font-size: 15px;
+    letter-spacing: none;
+    line-height: none;
+  }
+
+  .About-process h4 {
+    padding: 10px;
+    font-size: 26px;
+  }
+
+  .About-process h6 {
+    padding: 20px;
+  }
+
+  .Wrap-content p {
+    font-size: 20px;
+  }
+
+  .Card-img {
+    display: none;
   }
 }
