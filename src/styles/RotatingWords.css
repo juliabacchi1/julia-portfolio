@@ -9,18 +9,18 @@
 
 @media screen and (max-width: 1200px) {
   .RotatingText-container {
-    font-size: 100px; /* Ajuste para telas grandes, mas menores que 1200px */
+    font-size: 100px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .RotatingText-container {
-    font-size: 80px; /* Ajuste para tablets */
+    font-size: 80px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .RotatingText-container {
-    font-size: 60px; /* Ajuste para celulares */
+    font-size: 60px;
   }
 }

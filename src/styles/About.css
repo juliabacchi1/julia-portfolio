@@ -199,7 +199,7 @@
   }
 
   .About-hero h1 {
-    font-size: 160px; /* Títulos maiores */
+    font-size: 160px;
   }
 
   .About-hero h3 {
@@ -207,12 +207,12 @@
   }
 
   .About-description p {
-    font-size: 28px; /* Fonte maior */
+    font-size: 28px;
     line-height: 2.2;
   }
 
   .About-process h4 {
-    font-size: 70px; /* Ajuste para títulos grandes */
+    font-size: 70px;
   }
 }
 
@@ -228,22 +228,22 @@
 
   .About-main {
     flex-direction: column;
-    padding: 100px 20px; /* Reduz o padding */
+    padding: 100px 20px;
     gap: 40px;
   }
 
   .About-description,
   .About-certificates {
-    width: 100%; /* Ocupa toda a largura */
+    width: 100%;
   }
 
   .About-description p {
-    font-size: 18px; /* Fonte menor */
-    line-height: 1.8; /* Melhor espaçamento */
+    font-size: 18px;
+    line-height: 1.8;
   }
 
   .About-process h4 {
-    font-size: 40px; /* Títulos menores */
+    font-size: 40px;
   }
 
   .About-process h5 {
@@ -267,26 +267,26 @@
 
 @media (max-width: 480px) {
   .About-hero h1 {
-    font-size: 80px; /* Título menor */
+    font-size: 80px;
   }
 
   .About-hero h3 {
-    font-size: 20px; /* Subtítulo menor */
-    padding: 0 10px; /* Adiciona espaçamento interno */
+    font-size: 20px;
+    padding: 0 10px;
   }
 
   .About-main {
-    padding: 50px 10px; /* Padding ainda menor */
-    gap: 20px; /* Reduz o gap */
+    padding: 50px 10px;
+    gap: 20px;
   }
 
   .About-description p {
-    font-size: 16px; /* Texto menor */
+    font-size: 16px;
     line-height: 1.5;
   }
 
   .About-process h4 {
-    font-size: 30px; /* Ajusta título do processo */
+    font-size: 30px;
   }
 
   .About-process h5 {
@@ -298,17 +298,17 @@
   }
 
   .About-certificates-grid {
-    max-height: 200px; /* Reduz altura máxima */
+    max-height: 200px;
   }
 
   .Card {
-    max-width: 100%; /* Ocupa toda a largura da tela */
+    max-width: 100%;
     padding: 1rem;
-    margin: 0 auto; /* Centraliza */
+    margin: 0 auto;
   }
 
   .Transition-gradient {
-    height: 50px; /* Reduz altura do gradiente */
+    height: 50px;
   }
 
   .Wrap-content {

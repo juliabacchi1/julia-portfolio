@@ -35,7 +35,7 @@ section .Work {
 .ProjectCard {
   display: flex;
   flex-direction: column;
-  width: 48%; /* Ajuste o tamanho para ser responsivo */
+  width: 48%;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ section .Work {
 }
 
 .Image-wrapper:hover .Image-block {
-  transform: scale(1.1); /* Expande a imagem para 10% */
+  transform: scale(1.1);
 }
 
 .Content-wrapper {
@@ -150,53 +150,53 @@ section .Work {
   margin: 10px 0;
 }
 
-/* Estilos existentes mantidos aqui */
-
-/* Ajustes para telas menores que 1024px (tablets e desktops pequenos) */
 @media (max-width: 1024px) {
+  section .Work {
+    padding: 0;
+  }
+
   .Container-work {
     margin: 0 50px;
   }
 
   .Container-projects {
-    gap: 100px; /* Reduz o espaçamento entre os projetos */
+    gap: 100px;
     padding: 50px;
   }
 
   .Content-wrapper {
-    width: 300px; /* Reduz o tamanho do conteúdo */
+    width: 300px;
     height: 300px;
-    padding: 40px; /* Reduz padding */
+    padding: 40px;
   }
 
   .Content-wrapper h3 {
-    font-size: 36px; /* Fonte menor */
+    font-size: 36px;
   }
 
   .Image-wrapper img {
-    width: 500px; /* Ajusta o tamanho da imagem */
-    height: 490px;
+    width: 400px;
+    height: 390px;
   }
 }
 
-/* Ajustes para telas menores que 768px (tablets menores e smartphones grandes) */
 @media (max-width: 768px) {
   .Container-work {
     margin: 0;
   }
 
   .Container-projects {
-    gap: 50px; /* Menor espaçamento entre os projetos */
-    padding: 10px; /* Menor padding */
+    gap: 50px;
+    padding: 10px;
   }
 
   .Container-project {
     display: flex;
-    flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
+    flex-direction: column;
   }
 
   .Content-wrapper {
-    width: 50%; /* Reduz o tamanho do card */
+    width: 50%;
     height: 50%;
   }
 
@@ -206,11 +206,11 @@ section .Work {
   }
 
   .Content-wrapper h3 {
-    font-size: 28px; /* Fonte ainda menor */
+    font-size: 28px;
   }
 
   .Container-work h2 {
-    font-size: 40px; /* Título menor */
+    font-size: 40px;
     padding-left: 20px;
   }
 
@@ -219,41 +219,53 @@ section .Work {
   }
 }
 
-/* Ajustes para telas menores que 480px (smartphones pequenos) */
 @media (max-width: 480px) {
   .Container-work {
-    padding: 10px; /* Padding mínimo */
+    padding: 10px;
   }
 
   .Container-projects {
-    gap: 20px; /* Menor espaçamento entre os projetos */
+    gap: 30px;
     padding: 0;
   }
 
   .Container-project {
-    flex-direction: column; /* Organiza os itens em coluna */
+    flex-direction: column;
   }
 
-   .Content-wrapper {
-    width: 50%; /* Reduz o tamanho do card */
+  .Content-wrapper {
+    width: 50%;
     height: 50%;
   }
 
   .Image-wrapper {
     width: 100%;
-    opacity: 0.8; /* Diminui a opacidade para dar um efeito apagado */
+    opacity: 0.8;
+  }
+
+  .Work-block p {
+    font-size: 16px;
+    margin: 0;
   }
 
   .Content-wrapper h3 {
-    font-size: 20px; /* Reduz ainda mais o tamanho da fonte */
+    font-size: 20px;
   }
 
   .Container-work h2 {
-    font-size: 30px; /* Fonte menor */
+    font-size: 30px;
     padding-left: 10px;
   }
 
   .Thumbnail-category {
     display: none; /* Esconde a categoria na versão mobile */
+  }
+
+  .Thumbnail-link {
+    gap: 5px;
+  }
+
+  .Live {
+    padding: 0;
   }
 }

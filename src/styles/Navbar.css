@@ -3,7 +3,6 @@ nav {
   justify-content: space-between;
   padding: 20px;
   color: black;
-  /* background-color: #f8f8f8; */
   background: linear-gradient(
     180deg,
     rgba(236, 233, 250, 1) 0%,
@@ -68,15 +67,13 @@ nav .Links {
   margin-right: 50px;
 }
 
-/* Ocultar o botão de menu em telas maiores */
 .menu-toggle {
-  display: none;
+  display: none; /* Ocultar o botão de menu em telas maiores */
 }
 
-/* Mostrar o botão de menu apenas em telas pequenas */
 @media (max-width: 768px) {
   nav {
-    padding: 15px; /* Ajuste de padding para telas menores */
+    padding: 15px;
   }
 
   .menu-toggle {
@@ -97,8 +94,8 @@ nav .Links {
     left: 0;
     background-color: none;
     width: 100%;
-    padding: 20px; /* Padding ajustado */
-    margin: 0; /* Remover margem */
+    padding: 20px;
+    margin: 0;
   }
 
   .Links.open ul {
