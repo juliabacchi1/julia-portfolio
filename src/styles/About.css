@@ -214,8 +214,8 @@
 
   .Map p {
     font-size: 15px;
-    letter-spacing: none;
-    line-height: none;
+    letter-spacing: 0;
+    line-height: 1.2;
   }
 
   .About-process h4 {
@@ -231,7 +231,11 @@
     font-size: 20px;
   }
 
-  .Card-img {
+  .Card img {
     display: none;
+  }
+
+  .Container-about {
+    padding-bottom: 0;
   }
 }
