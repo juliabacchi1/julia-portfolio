@@ -16,7 +16,7 @@
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: 400;
   text-align: center;
   color: var(--text-color-secondary);
@@ -82,5 +82,9 @@
   .post-list {
     gap: 60px;
     padding: 0;
+  }
+
+  .subtitle {
+    padding-bottom: 15px;
   }
 }
