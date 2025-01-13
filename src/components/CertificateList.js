@@ -2,6 +2,11 @@ import React from "react";
 
 const certifications = [
   {
+    date: "December 2024",
+    title: "Junior Front-End Graduation",
+    link: "https://www.shecodes.io/diplomas/87401d4aded5ac4616ac4b08ee041d3f",
+  },
+  {
     date: "November 2024",
     title: "Advanced React Development",
     link: "https://www.shecodes.io/certificates/5c10d79c325c7d7c1710406081f9a2ba?_gl=1*1fc7df0*_gcl_au*MTAyNzc0MjE0MC4xNzMyOTEzMjUx",
