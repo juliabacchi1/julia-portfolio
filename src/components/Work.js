@@ -5,6 +5,7 @@ import DictionaryApp from "../assets/images/Dictionary-App.png";
 import WeatherSearch from "../assets/images/Weather-Search-Engine.png";
 import RecipesGenerator from "../assets/images/Recipes-generator.png";
 import TravelShowcase from "../assets/images/Travel-showcase.png";
+import RotaDaBaleia from "../assets/images/Rota-da-Baleia.png";
 
 function Work() {
   const projectImages = {
@@ -12,9 +13,20 @@ function Work() {
     "Weather Search": WeatherSearch,
     "Recipes Generator": RecipesGenerator,
     "Travel Showcase": TravelShowcase,
+    "Rota da Baleia": RotaDaBaleia,
   };
 
   const projects = [
+    {
+      image: "Rota da Baleia",
+      title: "Rota da Baleia Franca",
+      description:
+        "Website made for a client, highlighting tourist attractions, sustainability and ecotourism.",
+      liveLink: "https://rotabaleiafranca.com.br/",
+      githubLink: "",
+      type: "https://cero-phi.vercel.app/",
+      category: "WordPress",
+    },
     {
       image: "Dictionary App",
       title: "Dictionary Search",

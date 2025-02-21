@@ -8,6 +8,7 @@ import PostBridge from "../assets/images/Post-bridge.png";
 import PostImpostor from "../assets/images/Post-impostor.png";
 import PostPurpose from "../assets/images/Post-purpose.png";
 import PostAi from "../assets/images/Post-ai.png";
+import PostDay from "../assets/images/Post-day.png";
 import Descomplicando from "../assets/images/Descomplicando-manual.pdf";
 import Simplifying from "../assets/images/Simplifying-manual.pdf";
 
@@ -18,6 +19,15 @@ const Post = () => {
 
   useEffect(() => {
     const fakePosts = [
+      {
+        id: 8,
+        title: "Hey girl, I got you",
+        description:
+          "Honoring the incredible impact of women in tech and beyond on International Women's Day.",
+        date: "08/03/2025",
+        name: "• Julia Bacchi •",
+        image: PostDay,
+      },
       {
         id: 7,
         title: "And about AI?",
@@ -548,7 +558,7 @@ const Post = () => {
           and humanity walk hand in hand toward progress.
           <br />
           <br />
-         <strong> Sources of Inspiration:</strong>
+          <strong> Sources of Inspiration:</strong>
           <br />
           - Early cancer detection: transforming diagnostics.
           <br />
@@ -556,6 +566,34 @@ const Post = () => {
           Americas.
           <br />- AI's pivotal role in space discoveries and content creation
           growth.
+        </p>
+      )}
+      {post.id === 8 && (
+        <p>
+          March 8th is more than just a date - It's a reminder of the battles
+          fought, the progress made, and the road still ahead. It's a day to
+          celebrate <b>your courage, your voice, and your endless potential</b>.
+          <br />
+          You are the dreamers, the builders, the innovators. The ones who break
+          barriers, redefine possibilities, and inspire change.
+          <br /> <br />
+          In technology, in science, in leadership... Your presence shapes the
+          future. Every line of code you write, every idea you bring to life,
+          every challenge you overcome makes the world more inclusive, more
+          innovative, more powerful.
+          <br /> <br />
+          So today, and every day, remember this: You are seen. You are valued.
+          You are unstoppable. May your dreams be limitless, your power
+          undeniable, and your journey filled with those who uplift and support
+          you.
+          <br />
+          <br />
+          <h3>Let's grow the community of women in tech together!</h3>
+          💻✨ <b>Message me</b>, and I'll add you to our group, where we share
+          challenges, opportunities, and support each other in the journey
+          toward great jobs and personal projects.
+          <br />
+          <br /> And if you're reading this and need support, I'm here. 💜
         </p>
       )}
 

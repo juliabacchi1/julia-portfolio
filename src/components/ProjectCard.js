@@ -34,13 +34,20 @@ function ProjectCard({ project, projectImage }) {
             >
               <div className="Live">— Discover</div>
             </a>
-            <a
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="Live">— GitHub</div>
-            </a>
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="Live">— GitHub</div>
+              </a>
+            )}
+            {project.type && project.type.startsWith("http") && (
+              <a href={project.type} target="_blank" rel="noopener noreferrer">
+                <div className="Live">— Freelance</div>
+              </a>
+            )}
           </div>
         </div>
         <div className="Work-type-wrapper">

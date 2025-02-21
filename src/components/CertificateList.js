@@ -2,6 +2,11 @@ import React from "react";
 
 const certifications = [
   {
+    date: "February 2025",
+    title: "Imersão Front-End",
+    link: "https://cursos.alura.com.br/immersion/certificate/2314ef33-f47b-4097-9984-7b0750adc068",
+  },
+  {
     date: "December 2024",
     title: "Junior Front-End Graduation",
     link: "https://www.shecodes.io/diplomas/87401d4aded5ac4616ac4b08ee041d3f",

@@ -8,12 +8,22 @@ import PostBridge from "../assets/images/Post-bridge.png";
 import PostImpostor from "../assets/images/Post-impostor.png";
 import PostPurpose from "../assets/images/Post-purpose.png";
 import PostAi from "../assets/images/Post-ai.png";
+import PostDay from "../assets/images/Post-day.png";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     setPosts([
+      {
+        id: 8,
+        title: "Hey girl, I got you",
+        description:
+          "Honoring the incredible impact of women in tech and beyond on International Women's Day.",
+        date: "08/03/2025",
+        name: "• Julia Bacchi •",
+        image: PostDay,
+      },
       {
         id: 7,
         title: "And about AI?",
