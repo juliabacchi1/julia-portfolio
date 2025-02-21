@@ -10,16 +10,13 @@
   width: 100%;
 }
 
-.Container-about {
-  padding-bottom: 100px;
-}
-
 .About-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
+  margin-bottom: 100px;
   color: var(--text-color);
 }
 
@@ -34,34 +31,44 @@
   text-align: center;
 }
 
+.About-content {
+  margin: 50px;
+  padding: 0 20px;
+}
+
 .About-main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 100px 80px;
-  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .About-description,
-.About-certificates {
-  flex: 1 1 45%; /* Ajusta para caber em telas menores */
+.About-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.About-image img {
+  height: auto;
+  object-fit: cover;
 }
 
 .About-description h4,
 .About-certificates h4 {
-  font-size: 35px;
+  font-size: clamp(30px, 5vw, 70px);
   font-weight: 500;
   letter-spacing: 1.5px;
   margin: 0;
   color: var(--text-color);
 }
 
-.About-certificates-grid {
-  max-height: 270px;
-  overflow-y: auto;
-}
-
-.About-description p {
+.About-description p,
+.About-process p {
   font-size: clamp(16px, 2vw, 28px);
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -79,10 +86,10 @@
 
 .Map p,
 .Map a {
-  font-size: 16px;
+  font-size: clamp(16px, 2vw, 28px);
   font-weight: 400;
   letter-spacing: 1.5px;
-  line-height: 2;
+  line-height: 1.8;
   margin: 0;
 }
 
@@ -109,35 +116,6 @@
   letter-spacing: 1.5px;
   padding: 30px;
   margin: 0;
-}
-
-.About-process h5 {
-  color: var(--text-color);
-  font-size: 35px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  margin: 15px;
-  padding: 0;
-}
-
-.About-process h6 {
-  color: var(--text-color-secondary);
-  font-size: 25px;
-  font-size: clamp(17px, 3vw, 25px);
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  line-height: 1.7;
-  margin: 0;
-  padding-bottom: 50px;
-}
-
-.About-process p {
-  text-align: center;
-  color: var(--text-color-secondary);
-  font-size: clamp(16px, 2vw, 25px);
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
 }
 
 .Card-container {
@@ -189,14 +167,26 @@
   );
 }
 
+.About-certificates {
+  margin: 50px;
+  padding: 0 20px;
+}
+
+.About-certificates-grid {
+  max-height: 270px;
+  overflow-y: auto;
+}
+
 @media (max-width: 768px) {
   .About-main {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
   }
 
-  .Card {
-    padding: 1rem;
+  .About-description,
+  .About-image {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -223,10 +213,6 @@
 
   .Wrap-content p {
     font-size: 20px;
-  }
-
-  .Card img {
-    display: none;
   }
 
   .Container-about {

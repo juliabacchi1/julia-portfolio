@@ -38,8 +38,11 @@ const cards = [
 const AboutProcess = () => {
   return (
     <div className="About-process">
-      <h4>How I make a difference</h4>
-      <h6>Explore the key reasons why I can help bring your ideas to life</h6>
+      <h4>Why me?</h4>
+      <p>
+        Discover what makes my work unique and why I can be the developer
+        you're looking for.
+      </p>
       <div className="Card-container">
         {cards.map((card, index) => (
           <div key={index} className="Card">
