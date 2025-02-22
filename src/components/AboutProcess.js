@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Process1 from "../assets/images/Process1.png";
 import Process2 from "../assets/images/Process2.png";
 import Process3 from "../assets/images/Process3.png";
@@ -40,8 +40,8 @@ const AboutProcess = () => {
     <div className="About-process">
       <h4>Why me?</h4>
       <p>
-        Discover what makes my work unique and why I can be the developer
-        you're looking for.
+        Discover what makes my work unique and why I can be the developer you're
+        looking for.
       </p>
       <div className="Card-container">
         {cards.map((card, index) => (
