@@ -68,7 +68,8 @@
 }
 
 .About-description p,
-.About-process p {
+.About-process p,
+.About-certificates p {
   font-size: clamp(16px, 2vw, 28px);
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -120,7 +121,10 @@
 
 .Card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsividade, ajusta o número de colunas conforme a largura */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Responsividade, ajusta o número de colunas conforme a largura */
   gap: 2rem;
   justify-items: center;
   margin-top: 3rem;
@@ -173,8 +177,30 @@
 }
 
 .About-certificates-grid {
-  max-height: 270px;
-  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.Certificate-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-top: 2rem;
+}
+
+.Certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Certificate-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Certificate-link {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
