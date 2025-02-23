@@ -39,7 +39,7 @@ const CertificateList = () => {
     <div className="About-certificates">
       <h4>Certifications</h4>
       <p>
-        Certified in Junior Front-End Development, with
+        Certified in Junior Front-End Development. Also took
         bootcamps and specialization courses.
       </p>
       <div className="About-certificates-grid">

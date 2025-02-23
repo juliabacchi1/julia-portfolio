@@ -34,37 +34,17 @@ section .Hero {
   line-height: 1.8;
 }
 
-.download-card {
+.download-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Necessário para posicionar o texto sobre a imagem */
 }
 
-.resume-image {
+.resume-button {
   width: 100%;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-}
-
-.resume-image:hover {
-  transform: scale(1.1);
-}
-
-.download-text {
-  display: none;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  transition: opacity 0.3s ease;
-}
-
-.download-card:hover .download-text {
-  display: block;
-  color: var(--accent-color);
 }
 
 .Read-more {
@@ -116,7 +96,7 @@ section .Hero {
     font-size: 24px;
   }
 
-  .resume-image {
+  .resume-button {
     max-width: 90%;
   }
 }
@@ -142,20 +122,6 @@ section .Hero {
     margin: 0;
   }
 
-  .resume-image {
-    transition: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .resume-image:hover {
-    transform: scale(1);
-  }
-
-  .Button-read {
-    width: auto;
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -171,11 +137,11 @@ section .Hero {
     font-size: 18px;
   }
 
-  .resume-image {
+  .resume-button {
     max-width: 100%;
   }
 
-  .download-card {
+  .download-container {
     flex-direction: column;
   }
 

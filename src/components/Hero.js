@@ -3,7 +3,7 @@ import "../styles/Hero.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Resume from "../assets/images/Resume.pdf";
-import Computer from "../assets/images/Resume-img.png";
+import ResumeImg from "../assets/images/Resume-img.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +14,7 @@ function Hero() {
         <div className="Container-intro">
           <div>
             <motion.div
-              className="download-card"
+              className="download-container"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -28,11 +28,10 @@ function Hero() {
                 whileTap={{ scale: 0.9 }}
               >
                 <img
-                  src={Computer}
-                  alt="Computer with Resume"
-                  className="resume-image"
+                  src={ResumeImg}
+                  alt="Download Resume"
+                  className="resume-button"
                 />
-                <p className="download-text">Download Resume</p>
               </motion.a>
             </motion.div>
           </div>
