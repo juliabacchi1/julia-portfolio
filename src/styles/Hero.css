@@ -139,8 +139,25 @@ section .Hero {
     font-size: 25px;
   }
 
+  .Content-wrapper {
+    right: 40px;
+    padding: 40px;
+  }
+
+  .Image-wrapper img {
+    opacity: 0.6;
+  }
+
+  .Work-block {
+    grid-row-gap: 10px;
+  }
+
   .Button-read {
     font-size: 12px;
     padding: 12px 24px;
+  }
+
+  .Live {
+    font-size: 14px;
   }
 }
