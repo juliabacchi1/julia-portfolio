@@ -51,13 +51,8 @@ section .Work {
 .Image-wrapper img {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.033);
-  width: 600px;
-  height: 590px;
-}
-
-.Image-block {
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: transform 0.3s ease;
 }
 
@@ -80,6 +75,7 @@ section .Work {
 }
 
 .Work-block {
+  display: flex;
   grid-row-gap: 5px;
   flex-direction: column;
   max-width: 270px;
@@ -102,7 +98,6 @@ section .Work {
 }
 
 .Thumbnail-category {
-  flex: none;
   font-size: 20px;
 }
 
@@ -150,98 +145,29 @@ section .Work {
   margin: 10px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
   section .Work {
     padding: 0;
   }
 
   .Container-work {
-    margin: 0 50px;
-    padding: 20px;
+    margin: 0;
+    padding: 30px;
   }
 
   .Container-projects {
     gap: 100px;
-    padding: 50px;
-  }
-
-  .Content-wrapper {
-    width: 300px;
-    height: 300px;
-    padding: 40px;
-  }
-
-  .Content-wrapper h3 {
-    font-size: 36px;
-  }
-
-  .Image-wrapper img {
-    width: 400px;
-    height: 390px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Container-work {
-    margin: 0;
-    padding: 20px;
-  }
-
-  .Container-projects {
-    gap: 50px;
-    padding: 10px;
-  }
-
-  .Container-project {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Content-wrapper {
-    width: 50%;
-    height: 50%;
-  }
-
-  .Image-wrapper {
-    width: 100%;
-    opacity: 0.8;
-  }
-
-  .Content-wrapper h3 {
-    font-size: 28px;
-  }
-
-  .Container-work h2 {
-    font-size: 40px;
-    padding-left: 20px;
-  }
-
-  .Thumbnail-category {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .Container-work {
-    padding: 10px;
-  }
-
-  .Container-projects {
-    gap: 60px;
     padding: 0;
   }
 
-  .Container-project {
-    flex-direction: column;
-  }
-
   .Content-wrapper {
     width: 50%;
     height: 50%;
   }
 
-  .Image-wrapper {
+  .Image-wrapper img {
     width: 100%;
+    height: auto;
     opacity: 0.8;
   }
 
@@ -250,7 +176,7 @@ section .Work {
   }
 
   .Work-block p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
   }
 
@@ -264,7 +190,7 @@ section .Work {
   }
 
   .Thumbnail-category {
-    display: none; /* Esconde a categoria na versão mobile */
+    display: none;
   }
 
   .Thumbnail-link {
