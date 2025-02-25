@@ -13,38 +13,41 @@ section .Hero {
   margin: 0 100px;
 }
 
+.Content-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.Content-icons i {
+  font-size: 50px;
+  color: #3a3d53;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Content-icons i:hover {
+  transform: scale(1.2);
+  color: var(--accent-color);
+}
+
 .Container-intro {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2fr;
   gap: 60px;
   align-items: center;
   padding: 0 70px;
 }
 
-.Container-intro p {
-  text-align: center;
-  font-size: 30px;
-}
-
 .Container-intro h3 {
-  font-size: 30px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 400;
   color: var(--text-color-secondary);
   line-height: 1.8;
-}
-
-.download-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-button {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
 .Read-more {
@@ -95,38 +98,37 @@ section .Hero {
   .Container-intro h3 {
     font-size: 24px;
   }
-
-  .resume-button {
-    max-width: 90%;
-  }
 }
 
 @media (max-width: 768px) {
   section .Hero {
-    padding: 10px;
+    padding: 50px 0;
   }
 
   .Container-hero {
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .Container-intro {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 0;
+    gap: 30px;
     padding: 0;
+  }
+
+  .Content-icons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .Container-intro h3 {
     font-size: 20px;
-    margin: 0;
   }
-
 }
 
 @media (max-width: 480px) {
   .Container-hero {
-    padding: 10px;
+    padding: 20px;
   }
 
   .Container-intro {
@@ -134,19 +136,11 @@ section .Hero {
   }
 
   .Container-intro h3 {
-    font-size: 18px;
-  }
-
-  .resume-button {
-    max-width: 100%;
-  }
-
-  .download-container {
-    flex-direction: column;
+    font-size: 25px;
   }
 
   .Button-read {
     font-size: 12px;
-    width: auto;
+    padding: 12px 24px;
   }
 }

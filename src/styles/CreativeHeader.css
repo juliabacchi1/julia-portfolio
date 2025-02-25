@@ -1,0 +1,68 @@
+.CreativeHeader {
+  background: rgba(248, 248, 248, 1);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-header {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Text-header h4 {
+  font-size: clamp(24px, 4vw, 45px);
+  font-weight: 500;
+}
+
+.Text-header img {
+  max-width: 100%;
+}
+
+.Text-header h3 {
+  font-size: clamp(50px, 10vw, 135px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Button-header {
+  margin: 40px auto;
+}
+
+.Button-header a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-color);
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: clamp(16px, 2vw, 20px);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button-header a:hover {
+  background: var(--text-color);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .CreativeHeader {
+    padding: 6vh 3vw;
+  }
+
+  .Text-header {
+    gap: 10px;
+  }
+}

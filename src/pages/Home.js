@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Home.css";
 import Work from "../components/Work";
+import CreativeHeader from "../components/CreativeHeader";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Profile from "../assets/images/Profile.png";
@@ -10,19 +11,20 @@ function Home() {
     <div className="Home">
       <section id="home">
         <div className="Container-home">
-          <div className="Container-wrapper">
-            <div className="Intro">
-              <h4>Hello, I'm Julia</h4>
+          <div className="Main-content">
+            <div className="Text-content">
+              <h4>Hi, I'm Julia!</h4>
+              <h1>A Web Developer</h1>
             </div>
-            <div className="Main">
-              <h1>— Web</h1>
+            <div className="Image-container">
               <img src={Profile} alt="Julia" className="Profile-img" />
-            </div>
-            <div className="Content">
-              <h2>Developer</h2>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="creative-header">
+        <CreativeHeader />
       </section>
 
       <section id="hero">
