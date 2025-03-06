@@ -1,5 +1,5 @@
 .Container-home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
     rgba(236, 233, 250, 1) 0%,
     rgba(248, 248, 248, 1) 40%
   );
-  padding: 20px;
+  padding: 3vh 5vw;;
 }
 
 .Main-content {
@@ -20,7 +20,6 @@
   gap: 30px;
   max-width: 1020px;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .Text-content {
@@ -31,13 +30,13 @@
 }
 
 .Text-content h4 {
-  font-size: 28px;
+  font-size: clamp(30px, 4vw, 28px);
   font-weight: 500;
   margin: 0;
 }
 
 .Text-content h1 {
-  font-size: 100px;
+  font-size: clamp(45px, 8vw, 100px);
   font-weight: 400;
   margin: 0;
   margin-top: 20px;
@@ -56,39 +55,17 @@
 }
 
 @media (max-width: 768px) {
-  .Content-wrapper {
+.Container-home {
+    padding: 8vh 5vw; /* Reduzindo espaço no mobile */
+  }
+
+  .Main-content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   .Text-content {
-    align-items: flex-start;
-  }
-
-}
-
-@media (max-width: 480px) {
-
-  .Main-content {
-    align-items: flex-end;
-    gap: 0;
-  }
-
-  .Text-content h4 {
-    font-size: 20px;
-  }
-
-  .Text-content h1 {
-    font-size: 40px;
-  }
-
-  .Image-container {
     align-items: center;
   }
 
-  .Profile-img {
-    max-width: 140px;
-    max-height: 140px;
-  }
 }

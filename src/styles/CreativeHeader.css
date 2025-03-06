@@ -60,8 +60,7 @@
 
 @media (max-width: 768px) {
   .CreativeHeader {
-    padding: 6vh 3vw;
-
+    padding: 8vh 0;
   }
 
   .Text-header {
