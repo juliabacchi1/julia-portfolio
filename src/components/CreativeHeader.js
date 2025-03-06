@@ -18,7 +18,7 @@ function CreativeHeader() {
               rel="noopener noreferrer"
               download="Resume_Julia.pdf"
             >
-              Grab my resume
+              Take my resume
             </a>
           </div>
         </div>

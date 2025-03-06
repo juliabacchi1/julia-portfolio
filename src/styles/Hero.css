@@ -1,16 +1,30 @@
-section .Hero {
+.Hero {
   background: linear-gradient(
     180deg,
     rgba(248, 248, 248, 1) 60%,
     rgba(236, 233, 250, 1) 100%
   );
-
-  margin: 0 auto;
-  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .Container-hero {
-  margin: 0 100px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Container-intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+  padding: 0 70px;
 }
 
 .Content-icons {
@@ -20,7 +34,7 @@ section .Hero {
   gap: 20px;
   justify-items: center;
   align-items: center;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -35,16 +49,8 @@ section .Hero {
   color: var(--accent-color);
 }
 
-.Container-intro {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  align-items: center;
-  padding: 0 70px;
-}
-
 .Container-intro h3 {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   font-weight: 400;
   color: var(--text-color-secondary);
   line-height: 1.8;
@@ -58,15 +64,14 @@ section .Hero {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 30px;
-  background: #3a3d53;
-  color: rgba(255, 255, 255);
-  cursor: pointer;
   border: none;
   border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
+  color: rgba(255, 255, 255);
   text-decoration: none;
+  padding: 10px 30px;
+  font-size: clamp(16px, 2vw, 20px);
+  background-color: #3a3d53;
+  cursor: pointer;
   transition: 0.3s;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -86,78 +91,20 @@ section .Hero {
   transform: translateX(5px);
 }
 
-@media (max-width: 1024px) {
-  .Container-hero {
-    margin: 0 50px;
-  }
-
-  .Container-intro {
-    gap: 40px;
-  }
-
-  .Container-intro h3 {
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 768px) {
-  section .Hero {
-    padding: 50px 0;
-  }
-
   .Container-hero {
-    margin: 0 20px;
+    padding: 20px 5%;
   }
 
   .Container-intro {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 40px;
     padding: 0;
   }
 
   .Content-icons {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-  .Container-intro h3 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Container-hero {
-    padding: 20px;
-  }
-
-  .Container-intro {
-    padding: 0;
-  }
-
-  .Container-intro h3 {
-    font-size: 25px;
-  }
-
-  .Content-wrapper {
-    right: 40px;
-    padding: 40px;
-  }
-
-  .Image-wrapper img {
-    opacity: 0.6;
-  }
-
-  .Work-block {
-    grid-row-gap: 10px;
-  }
-
-  .Button-read {
-    font-size: 12px;
-    padding: 12px 24px;
-  }
-
-  .Live {
-    font-size: 14px;
   }
 }

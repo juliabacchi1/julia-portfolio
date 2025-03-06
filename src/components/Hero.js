@@ -20,8 +20,8 @@ function Hero() {
 
           <div>
             <h3>
-              A curious front-end developer always exploring new ways to craft
-              meaningful experiences.
+              I'm a curious front-end developer always exploring new ways to
+              craft meaningful experiences.
             </h3>
             <div className="Read-more">
               <Link to="/about">
