@@ -39,7 +39,7 @@ function Contact() {
         <h3>Say Hello.</h3>
         <div className="Info-contact">
           <a className="Info-link" href="mailto:juliabacchi92@gmail.com">
-            <button className="Info-button">juliabacchi92@gmail.com</button>
+            juliabacchi92@gmail.com
           </a>
         </div>
         <div className="Info-socials">

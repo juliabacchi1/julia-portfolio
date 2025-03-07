@@ -1,6 +1,6 @@
 .CreativeHeader {
   background: rgba(248, 248, 248, 1);
-  color: var(--text-color);
+  color: var(--text-color-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,9 +28,10 @@
 
 .Text-header h3 {
   font-size: clamp(55px, 10vw, 135px);
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+  color: var(--text-color);
 }
 
 .Button-header {
@@ -43,18 +44,18 @@
   justify-content: center;
   border: 1px solid var(--text-color);
   border-radius: 50px;
-  font-weight: 600;
-  color: var(--text-color);
+  color: #3a3d53;;
   text-decoration: none;
   padding: 10px 30px;
   font-size: clamp(16px, 2vw, 20px);
+  font-weight: 500;
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .Button-header a:hover {
-  background: var(--text-color);
+  background: #3a3d53;;
   color: #fff;
 }
 

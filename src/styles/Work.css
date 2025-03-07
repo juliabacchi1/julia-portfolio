@@ -11,7 +11,7 @@
 .Container-work {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 clamp(20px, 5vw, 100px);
+  padding: 0;
 }
 
 .Container-projects {
@@ -62,7 +62,7 @@
 
 .Content-wrapper {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255);
@@ -150,8 +150,9 @@
   }
 
   .Container-work {
-    margin: 0;
     padding: 20px;
+    padding-bottom: 70px;
+    margin: 0;
   }
 
   .Container-projects {
@@ -165,17 +166,18 @@
   }
 
   .Content-wrapper {
-    width: 50%;
-    height: 50%;
-    padding: 50px;
+    width: 60%;
+    height: auto;
+    right: 40px;
+    padding: 30px;
   }
 
   .Image-wrapper img {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .Work-block {
-    gap: 15px;
+    gap: 10px;
   }
 
   .Work-block p {

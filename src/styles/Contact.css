@@ -1,4 +1,4 @@
-section .Contact {
+.Contact {
   background: linear-gradient(
     180deg,
     rgba(221, 218, 242, 1) 0%,
@@ -9,49 +9,36 @@ section .Contact {
 
 .Container-contact {
   text-align: center;
-  padding: 50px;
+  padding: clamp(30px, 5vw, 50px);
   padding-bottom: 0;
 }
 
 .Container-contact h3 {
-  font-size: 100px;
+  font-size: clamp(40px, 8vw, 100px);
   color: var(--text-color);
   margin-bottom: 0;
 }
 
 .Info-contact {
-  display: inline-flex;
-  margin: 40px;
+  margin: 40px 0;
 }
 
-button.Info-button {
-  background: rgba(255, 255, 255);
-  padding: 15px 40px;
-  border: none;
+.Info-link {
+  font-size: clamp(16px, 2vw, 20px);
   color: var(--text-color-secondary);
-  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 60px;
-  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
-  transition: 0.5s;
-  position: relative;
-  cursor: pointer;
-}
-
-button.Info-button:after {
-  position: absolute;
-  transition: 0.5s;
-}
-
-button.Info-button:hover {
-  padding: 15px 45px;
-  letter-spacing: 2px;
-  background: rgba(240, 240, 240);
-}
-
-a .Info-link {
   text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255);
+  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.Info-link:hover {
+  background: rgba(240, 240, 240);
+  letter-spacing: 0.5px;
 }
 
 .Info-socials {
@@ -61,23 +48,11 @@ a .Info-link {
 }
 
 .Icon {
-  font-size: 24px;
+  font-size: clamp(25px, 2vw, 30px);
   color: var(--text-color-secondary);
   transition: color 0.3s;
 }
 
 .Icon:hover {
   color: var(--accent-color);
-}
-
-@media (max-width: 480px) {
-  .Container-contact h3 {
-    font-size: 60px;
-    padding: 0;
-  }
-
-  button.Info-button {
-    font-size: 12px;
-    padding: 15px;
-  }
 }

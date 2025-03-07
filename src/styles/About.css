@@ -4,10 +4,7 @@
     rgba(236, 233, 250, 1) 0%,
     rgba(221, 218, 242) 70%
   );
-  margin: 0 auto;
-  padding-top: 170px;
   min-height: 100vh;
-  width: 100%;
 }
 
 .About-hero {
@@ -15,25 +12,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  margin-bottom: 100px;
   color: var(--text-color);
+  height: 100vh;
 }
 
 .About-hero h1 {
-  font-size: clamp(80px, 10vw, 160px);
+  font-size: clamp(70px, 10vw, 160px);
   font-weight: 500;
   margin: 0;
 }
 
 .About-hero h3 {
-  font-size: clamp(20px, 3vw, 36px);
+  font-size: clamp(18px, 3vw, 36px);
   text-align: center;
 }
 
 .About-content {
-  margin: 50px;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .About-main {
@@ -50,64 +46,36 @@
 .About-description,
 .About-image {
   flex: 1;
-  max-width: 50%;
 }
 
 .About-image img {
   height: auto;
   object-fit: cover;
+  width: 100%;
 }
 
-.About-description h4,
-.About-certificates h4 {
-  font-size: clamp(30px, 5vw, 70px);
+.About-description h4 {
+  font-size: clamp(35px, 5vw, 70px);
   font-weight: 500;
   letter-spacing: 1.5px;
   margin: 0;
   color: var(--text-color);
 }
 
-.About-description p,
-.About-process p,
-.About-certificates p {
-  font-size: clamp(16px, 2vw, 28px);
+.About-description p {
+  font-size: clamp(18px, 2vw, 28px);
   font-weight: 400;
   letter-spacing: 1.5px;
   line-height: 1.8;
   color: var(--text-color-secondary);
-}
-
-.Map {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.Map p,
-.Map a {
-  font-size: clamp(16px, 2vw, 28px);
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.Map p {
-  color: var(--text-color-secondary);
-}
-
-.Map a {
-  text-decoration: none;
-  text-align: center;
 }
 
 .About-process {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   padding: 50px;
-  overflow: hidden; /* Evita rolagem inesperada */
-  position: relative;
 }
 
 .About-process h4 {
@@ -115,16 +83,20 @@
   font-size: clamp(30px, 5vw, 70px);
   font-weight: 500;
   letter-spacing: 1.5px;
-  padding: 30px;
   margin: 0;
+}
+
+.About-process p {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
 }
 
 .Card-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(280px, 1fr)
-  ); /* Responsividade, ajusta o número de colunas conforme a largura */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
   margin-top: 3rem;
@@ -162,7 +134,7 @@
 }
 
 .Transition-gradient {
-  height: 100px; /* Altura do gradiente */
+  height: 100px;
   background: linear-gradient(
     180deg,
     rgba(221, 218, 242, 1) 100%,
@@ -172,8 +144,24 @@
 }
 
 .About-certificates {
-  margin: 50px;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.About-certificates h4 {
+  font-size: clamp(30px, 5vw, 70px);
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.About-certificates p {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
 }
 
 .About-certificates-grid {
@@ -210,39 +198,14 @@
     align-items: center;
   }
 
-  .About-description,
-  .About-image {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .About-main,
-  .About-process {
+  .About-content,
+  .About-process,
+  .About-certificates {
+    text-align: center;
     padding: 20px;
   }
 
-  .Map p {
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 1.2;
-  }
-
-  .About-process h4 {
-    padding: 10px;
-    font-size: 26px;
-  }
-
-  .About-process h6 {
-    padding: 20px;
-  }
-
-  .Wrap-content p {
-    font-size: 20px;
-  }
-
-  .Container-about {
-    padding-bottom: 0;
+  .Card-container {
+    gap: 3rem;
   }
 }
