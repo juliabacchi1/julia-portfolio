@@ -71,6 +71,34 @@ nav .Links {
   display: none; /* Ocultar o botão de menu em telas maiores */
 }
 
+.language-switch {
+  display: flex;
+  gap: 2px;
+  margin-right: 30px;
+}
+
+.language-options {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column; /* Abre as opções verticalmente */
+  position: absolute;
+}
+
+.language-switch button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--text-color-secondary);
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.language-switch button:hover {
+  color: #ff6600;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 15px;
@@ -108,5 +136,9 @@ nav .Links {
 
   .Links ul li a {
     padding: 10px 15px;
+  }
+
+  .language-switch {
+    margin-right: 0;
   }
 }

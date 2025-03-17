@@ -2,13 +2,17 @@ import React from "react";
 import "../styles/CreativeHeader.css";
 import Creative from "../assets/images/Creative.png";
 import Resume from "../assets/images/Resume.pdf";
+import { useTranslation } from "react-i18next";
 
 function CreativeHeader() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="CreativeHeader">
       <div className="Container-header">
         <div className="Text-header">
-          <h4>Welcome to</h4>
+          <h4>{t("creativeHeader.greeting")}</h4>
           <img src={Creative} alt="Creative" className="Creative" />
           <h3>portfolio</h3>
           <div className="Button-header">
@@ -18,7 +22,7 @@ function CreativeHeader() {
               rel="noopener noreferrer"
               download="Resume_Julia.pdf"
             >
-              Take my resume
+              {t("creativeHeader.button")}
             </a>
           </div>
         </div>

@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Navbar from "./components/Navbar";
 import Post from "./pages/Post";
+import "./i18n";
 
 function App() {
   return (

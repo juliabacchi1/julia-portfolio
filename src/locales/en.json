@@ -1,0 +1,25 @@
+{
+  "home": {
+    "greeting": "Hi, I'm Julia!",
+    "role": "A Web Developer"
+  },
+  "navbar": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "creativeHeader": {
+    "greeting": "Welcome to",
+    "button": "Take my resume"
+  },
+  "hero": {
+    "title": "Transformando ideias em realidade"
+  },
+  "work": {
+    "title": "Trabalhos"
+  },
+  "contact": {
+    "title": "Contato"
+  }
+}

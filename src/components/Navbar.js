@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../styles/Navbar.css";
 
 function Navbar() {
+
+  const { t } = useTranslation();
+
   const [activeLink, setActiveLink] = useState("home"); // Estado do link ativo
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado do menu hambúrguer
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const { i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -57,6 +63,8 @@ function Navbar() {
   const handleLinkClick = (link) => {
     setActiveLink(link);
 
+    setIsMenuOpen(false);
+
     if (link === "about") {
       if (location.pathname !== "/about") {
         navigate("/about");
@@ -80,6 +88,16 @@ function Navbar() {
   // Alterna a visibilidade do menu hambúrguer
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  //Troca de idioma
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsLanguageMenuOpen(false); // Fecha o menu após a seleção
+  };
+
+  const toggleLanguageMenu = () => {
+    setIsLanguageMenuOpen(!isLanguageMenuOpen); // Alterna o estado do menu de idiomas
   };
 
   return (
@@ -108,7 +126,7 @@ function Navbar() {
               }}
               className={activeLink === "work" ? "active" : ""}
             >
-              Work
+              {t("navbar.work")}
             </a>
           </li>
           <li>
@@ -117,7 +135,7 @@ function Navbar() {
               onClick={() => handleLinkClick("about")}
               className={activeLink === "about" ? "active" : ""}
             >
-              About
+              {t("navbar.about")}
             </Link>
           </li>
           <li>
@@ -129,7 +147,7 @@ function Navbar() {
               }}
               className={activeLink === "contact" ? "active" : ""}
             >
-              Contact
+              {t("navbar.contact")}
             </a>
           </li>
           <li>
@@ -138,10 +156,24 @@ function Navbar() {
               onClick={() => handleLinkClick("blog")}
               className={activeLink === "blog" ? "active" : ""}
             >
-              Blog
+              {t("navbar.blog")}
             </Link>
           </li>
         </ul>
+      </div>
+
+      {/* Menu de idiomas */}
+      <div className="language-switch">
+        <button onClick={toggleLanguageMenu}>
+          {i18n.language.toUpperCase()} &#9660; {/* Setinha para baixo */}
+        </button>
+        {isLanguageMenuOpen && (
+          <div className="language-options">
+            <button onClick={() => changeLanguage("en")}>🇺🇸 EN</button>
+            <button onClick={() => changeLanguage("pt")}>🇧🇷 PT</button>
+            <button onClick={() => changeLanguage("es")}>🇦🇷 ES</button>
+          </div>
+        )}
       </div>
 
       <button
