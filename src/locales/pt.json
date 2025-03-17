@@ -14,12 +14,13 @@
     "button": "Baixe meu currículo"
   },
   "hero": {
-    "title": "Transformando ideias em realidade"
+    "title": "Sou uma front-end curiosa, que adora explorar novas maneiras de criar experiências únicas.",
+    "button": "Ler mais"
   },
   "work": {
-    "title": "Trabalhos"
+    "title": "Últimos trabalhos"
   },
   "contact": {
-    "title": "Contato"
+    "title": "Vamos conversar"
   }
 }

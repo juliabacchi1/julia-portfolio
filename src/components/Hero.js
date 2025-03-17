@@ -3,8 +3,12 @@ import "../styles/Hero.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="Hero">
       <div className="Container-hero">
@@ -19,14 +23,11 @@ function Hero() {
           </div>
 
           <div>
-            <h3>
-              I'm a curious front-end developer always exploring new ways to
-              craft meaningful experiences.
-            </h3>
+            <h3>{t("hero.title")}</h3>
             <div className="Read-more">
               <Link to="/about">
                 <button className="Button-read">
-                  Read more
+                  {t("hero.button")}
                   <FontAwesomeIcon className="Read-icon" icon={faArrowRight} />
                 </button>
               </Link>

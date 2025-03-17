@@ -14,12 +14,13 @@
     "button": "Take my resume"
   },
   "hero": {
-    "title": "Transformando ideias em realidade"
+    "title": "I'm a curious front-end developer always exploring new ways to craft meaningful experiences.",
+    "button": "Read more"
   },
   "work": {
-    "title": "Trabalhos"
+    "title": "Selected projects"
   },
   "contact": {
-    "title": "Contato"
+    "title": "Say Hello."
   }
 }

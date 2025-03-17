@@ -6,8 +6,12 @@ import WeatherSearch from "../assets/images/Weather-Search-Engine.png";
 import RecipesGenerator from "../assets/images/Recipes-generator.png";
 import TravelShowcase from "../assets/images/Travel-showcase.png";
 import RotaDaBaleia from "../assets/images/Rota-da-Baleia.png";
+import { useTranslation } from "react-i18next";
 
 function Work() {
+
+  const { t } = useTranslation();
+
   const projectImages = {
     "Dictionary App": DictionaryApp,
     "Weather Search": WeatherSearch,
@@ -67,7 +71,7 @@ function Work() {
   return (
     <section id="work" className="Work">
       <div className="Container-work">
-        <h2>Selected projects</h2>
+        <h2>{t("work.title")}</h2>
         <div className="Container-projects">
           {projects.map((project, index) => (
             <div key={index} className="Container-project">

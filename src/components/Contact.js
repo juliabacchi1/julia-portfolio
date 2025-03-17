@@ -8,8 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Wave from "../components/Wave";
 import "../styles/Contact.css";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+
+  const { t } = useTranslation();
+
   const socialLinks = [
     {
       href: "https://www.linkedin.com/in/juliabacchi/",
@@ -36,7 +40,7 @@ function Contact() {
   return (
     <section id="contact" className="Contact">
       <div className="Container-contact">
-        <h3>Say Hello.</h3>
+        <h3>{t("contact.title")}</h3>
         <div className="Info-contact">
           <a className="Info-link" href="mailto:juliabacchi92@gmail.com">
             juliabacchi92@gmail.com
