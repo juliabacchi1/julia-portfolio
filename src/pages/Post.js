@@ -94,7 +94,7 @@ const Post = () => {
     } else {
       setPost(foundPost);
     }
-  }, [id, navigate]);
+  }, [id, navigate, t]);
 
   if (!post) {
     return <div>Post not found</div>;
