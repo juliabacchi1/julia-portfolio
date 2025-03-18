@@ -9,7 +9,6 @@ import RotaDaBaleia from "../assets/images/Rota-da-Baleia.png";
 import { useTranslation } from "react-i18next";
 
 function Work() {
-
   const { t } = useTranslation();
 
   const projectImages = {
@@ -23,9 +22,8 @@ function Work() {
   const projects = [
     {
       image: "Rota da Baleia",
-      title: "Rota da Baleia Franca",
-      description:
-        "Website made for a client, highlighting tourist attractions, sustainability and ecotourism.",
+      title: t("work.projects.rotaDaBaleia.title"),
+      description: t("work.projects.rotaDaBaleia.description"),
       liveLink: "https://rotabaleiafranca.com.br/",
       githubLink: "",
       type: "https://cero-phi.vercel.app/",
@@ -33,36 +31,32 @@ function Work() {
     },
     {
       image: "Dictionary App",
-      title: "Dictionary Search",
-      description:
-        "A powerful dictionary search that provides detailed definitions and translations.",
+      title: t("work.projects.dictionaryApp.title"),
+      description: t("work.projects.dictionaryApp.description"),
       liveLink: "https://dictionary-app-search.netlify.app/",
       githubLink: "https://github.com/juliabacchi1/dictionary-app",
       category: "React.js",
     },
     {
       image: "Weather Search",
-      title: "Weather Forecast",
-      description:
-        "A weather forecast app that provides real-time weather data for any location.",
+      title: t("work.projects.weatherSearch.title"),
+      description: t("work.projects.weatherSearch.description"),
       liveLink: "https://temp-search-engine.netlify.app/",
       githubLink: "https://github.com/juliabacchi1/react-search-engine",
       category: "React.js",
     },
     {
       image: "Recipes Generator",
-      title: "Recipes Generator",
-      description:
-        "An app that generates random recipes based on available ingredients.",
+      title: t("work.projects.recipesGenerator.title"),
+      description: t("work.projects.recipesGenerator.description"),
       liveLink: "https://recipes-generator-ai.netlify.app/",
       githubLink: "https://github.com/juliabacchi1/recipes-generator",
       category: "JavaScript",
     },
     {
       image: "Travel Showcase",
-      title: "Travel Showcase",
-      description:
-        "An interactive and resposive website that highlights the amazing aspects of a destination.",
+      title: t("work.projects.travelShowcase.title"),
+      description: t("work.projects.travelShowcase.description"),
       liveLink: "https://fullyresponsive-destination.netlify.app/",
       githubLink: "https://github.com/juliabacchi1/travel-destination",
       category: "JavaScript",

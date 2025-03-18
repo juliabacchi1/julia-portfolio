@@ -9,91 +9,86 @@ import PostImpostor from "../assets/images/Post-impostor.png";
 import PostPurpose from "../assets/images/Post-purpose.png";
 import PostAi from "../assets/images/Post-ai.png";
 import PostDay from "../assets/images/Post-day.png";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+  const { t } = useTranslation();
+
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     setPosts([
       {
         id: 8,
-        title: "Hey girl, I got you",
-        description:
-          "Honoring the incredible impact of women in tech and beyond on International Women's Day.",
+        title: t("blog.posts.day.title"),
+        description: t("blog.posts.day.description"),
         date: "08/03/2025",
         name: "• Julia Bacchi •",
         image: PostDay,
       },
       {
         id: 7,
-        title: "And about AI?",
-        description:
-          "Exploring the transformative impact of artificial intelligence in 2024 and beyond.",
+        title: t("blog.posts.ai.title"),
+        description: t("blog.posts.ai.description"),
         date: "14/12/2024",
         name: "• Julia Bacchi •",
         image: PostAi,
       },
       {
         id: 6,
-        title: "The power of purpose",
-        description:
-          "What turns dreams into action? Discover how finding your WHY can transform your journey.",
+        title: t("blog.posts.purpose.title"),
+        description: t("blog.posts.purpose.description"),
         date: "25/11/2024",
         name: "• Julia Bacchi •",
         image: PostPurpose,
       },
       {
         id: 5,
-        title: "Embracing your inner coder",
-        description:
-          "Overcome imposter syndrome and own your coding journey with confidence and resilience.",
+        title: t("blog.posts.impostor.title"),
+        description: t("blog.posts.impostor.description"),
         date: "18/11/2024",
         name: "• Julia Bacchi •",
         image: PostImpostor,
       },
       {
         id: 4,
-        title: "Building bridges with APIs",
-        description:
-          "The backbone of modern development, enabling seamless connections and empowering code.",
+        title: t("blog.posts.bridge.title"),
+        description: t("blog.posts.bridge.description"),
         date: "01/11/2024",
         name: "• Julia Bacchi •",
         image: PostBridge,
       },
       {
         id: 3,
-        title: "Breaking barriers: We women",
-        description:
-          "Women in programming are breaking norms and shaping a more inclusive, innovative tech future.",
+        title: t("blog.posts.woman.title"),
+        description: t("blog.posts.woman.description"),
         date: "02/10/2024",
         name: "• Julia Bacchi •",
         image: PostWoman,
       },
       {
         id: 2,
-        title: "I wanna be a programmer",
-        description:
-          "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech.",
+        title: t("blog.posts.beginner.title"),
+        description: t("blog.posts.beginner.description"),
         date: "30/08/2024",
         name: "• Julia Bacchi •",
         image: PostBegginer,
       },
       {
         id: 1,
-        title: "This is about change!",
-        description:
-          "Taking the leap into a new career path, where change leads to growth and opportunity.",
+        title: t("blog.posts.career.title"),
+        description: t("blog.posts.career.description"),
         date: "28/07/2024",
         name: "• Julia Bacchi •",
         image: PostCareer,
       },
     ]);
-  }, []);
+  }, [t]);
 
   return (
     <div className="container">
-      <h1 className="title">Blogging my Code journey</h1>
-      <h2 className="subtitle">One line of code at a time - By Julia Bacchi</h2>
+      <h1 className="title">{t("blog.title")}</h1>
+      <h2 className="subtitle">{t("blog.subtitle")}</h2>
       <div className="post-list">
         {posts.map((post) => (
           <Link

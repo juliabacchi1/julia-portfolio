@@ -1,7 +1,7 @@
 {
   "home": {
     "greeting": "Olá, eu sou a Julia!",
-    "role": "A Web Developer"
+    "role": "Dev front-end"
   },
   "navbar": {
     "work": "Trabalhos",
@@ -18,7 +18,29 @@
     "button": "Ler mais"
   },
   "work": {
-    "title": "Últimos trabalhos"
+    "title": "Últimos trabalhos",
+    "projects": {
+      "rotaDaBaleia": {
+        "title": "Rota da Baleia Franca",
+        "description": "Site criado para um cliente, destacando atrações turísticas, sustentabilidade e ecoturismo."
+      },
+      "dictionaryApp": {
+        "title": "Dictionary Search",
+        "description": "Uma poderosa busca de dicionário que fornece definições detalhadas e traduções."
+      },
+      "weatherSearch": {
+        "title": "Weather Forecast",
+        "description": "Um aplicativo de previsão do tempo que fornece dados em tempo real para qualquer local."
+      },
+      "recipesGenerator": {
+        "title": "Recipes Generator",
+        "description": "Um aplicativo que gera receitas com base nos ingredientes disponíveis em casa."
+      },
+      "travelShowcase": {
+        "title": "Travel Showcase",
+        "description": "Um site interativo e responsivo que destaca os aspectos incríveis de um destino."
+      }
+    }
   },
   "about": {
     "subtitle": "Olá, sou Julia Bacchi — Eu amo criar",
@@ -40,5 +62,43 @@
   },
   "contact": {
     "title": "Vamos conversar"
+  },
+  "blog": {
+    "title": "Blog Café com Código",
+    "subtitle": "Dose diária de programação - Por Julia Bacchi",
+    "posts": {
+      "career": {
+        "title": "Isso é sobre mudança!",
+        "description": "Dando o salto para uma nova carreira, onde a mudança leva ao crescimento e à oportunidade."
+      },
+      "beginner": {
+        "title": "Quero ser programador",
+        "description": "Pronto para mergulhar no mundo tech? Abra as portas para novas possibilidades."
+      },
+      "woman": {
+        "title": "Nós mulheres na programação",
+        "description": "Mulheres na programação quebrando normas e moldando um futuro tech inclusivo e inovador."
+      },
+      "bridge": {
+        "title": "Construindo pontes com APIs",
+        "description": "A base do desenvolvimento moderno, permitindo conexões e potencializando códigos."
+      },
+      "impostor": {
+        "title": "Abrace seu programador interior",
+        "description": "Supere a síndrome do impostor e domine sua jornada com confiança e resiliência."
+      },
+      "purpose": {
+        "title": "O poder do propósito",
+        "description": "O que transforma sonhos em ação? Encontre o seu PORQUÊ e transformar sua jornada."
+      },
+      "ai": {
+        "title": "E sobre a IA?",
+        "description": "Explorando o impacto transformador da inteligência artificial em 2024 e além."
+      },
+      "day": {
+        "title": "Estou com você!",
+        "description": "Um texto sobre apoio, incentivo, força e coragem. Feliz Dia Internacional da Mulher!"
+      }
+    }
   }
 }

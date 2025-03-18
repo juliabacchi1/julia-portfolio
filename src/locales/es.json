@@ -1,7 +1,104 @@
 {
-  "home": "Inicio",
-  "work": "Trabajo",
-  "about": "Sobre",
-  "contact": "Contacto",
-  "blog": "Blog"
+  "home": {
+    "greeting": "Hola, soy Julia!",
+    "role": "Dev front-end"
+  },
+  "navbar": {
+    "work": "Trabajos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "creativeHeader": {
+    "greeting": "Bienvenido a",
+    "button": "Descarga mi currículum"
+  },
+  "hero": {
+    "title": "Soy una desarrolladora front-end curiosa que siempra explora nuevas formas de crear experiencias únicas.",
+    "button": "Leer más"
+  },
+  "work": {
+    "title": "Últimos trabajos",
+    "projects": {
+      "rotaDaBaleia": {
+        "title": "Rota da Baleia Franca",
+        "description": "Sitio web creado para un cliente, destacando atracciones turísticas, sostenibilidad y ecoturismo."
+      },
+      "dictionaryApp": {
+        "title": "Dictionary Search",
+        "description": "Una potente búsqueda de diccionario que proporciona definiciones y traducciones detalladas."
+      },
+      "weatherSearch": {
+        "title": "Weather Forecast",
+        "description": "Una aplicación de pronóstico del tiempo que ofrece datos en tiempo real para cualquier ubicación."
+      },
+      "recipesGenerator": {
+        "title": "Recipes Generator",
+        "description": "Una aplicación que genera recetas según los ingredientes disponibles en casa."
+      },
+      "travelShowcase": {
+        "title": "Travel Showcase",
+        "description": "Un sitio web interactivo y responsivo que destaca los aspectos increíbles de un destino."
+      }
+    }
+  },
+  "about": {
+    "subtitle": "Hola, soy Julia Bacchi — Me encanta crear",
+    "title": "Inspirad",
+    "titleTwo": "ras",
+    "rotatingWords": ["Soluciones", "Experiencias", "Interacciones"],
+    "description": "Sobre mí",
+    "descriptionTextOne": "Soy una desarrolladora front-end que programa con personalidad, crea con propósito y busca un futuro sostenible.",
+    "descriptionTextTwo": "Creo que la tecnología debe ser intuitiva, impactante y responsable.",
+    "descriptionTextThree": "Entre líneas de código, me encontrarás haciendo yoga, rodeada de mascotas o recargando energías junto al mar."
+  },
+  "aboutProcess": {
+    "title": "Por qué yo?",
+    "subtitle": "Descubre qué hace único mi trabajo y por qué soy la desarrolladora que estás buscando."
+  },
+  "certificate": {
+    "title": "Certificaciones",
+    "subtitle": "Graduada en Desarrollo Front-End Junior. Cuento con bootcamps y cursos especializados."
+  },
+  "contact": {
+    "title": "Hablemos"
+  },
+  "blog": {
+    "title": "Blog Café con Código",
+    "subtitle": "Dosis diaria de programación - Por Julia Bacchi",
+    "posts": {
+      "career": {
+        "title": "Esto es sobre cambio!",
+        "description": "Dando el salto a una nueva carrera, donde el cambio lleva al crecimiento y a la oportunidad."
+      },
+      "beginner": {
+        "title": "Quiero ser programador",
+        "description": "Listo para sumergirte en el mundo tech? Abre las puertas a nuevas posibilidades."
+      },
+      "woman": {
+        "title": "Nosotras en la programación",
+        "description": "Mujeres rompiendo normas y dando forma a un futuro tech inclusivo e innovador."
+      },
+      "bridge": {
+        "title": "Construyendo puentes con APIs",
+        "description": "La base del desarrollo moderno, permitiendo conexiones y potenciando códigos."
+      },
+      "impostor": {
+        "title": "Abraza a tu coder interior",
+        "description": "Supera el síndrome del impostor y domina tu camino con confianza y resiliencia."
+      },
+      "purpose": {
+        "title": "El poder del propósito",
+        "description": "Qué transforma los sueños en acción? Encuentra tu PORQUÉ y transforma tu camino."
+      },
+      "ai": {
+        "title": "Y qué pasa con la IA?",
+        "description": "Explorando el impacto transformador de la inteligencia artificial en 2024 y más allá."
+      },
+      "day": {
+        "title": "Estoy contigo!",
+        "description": "Un texto sobre apoyo, aliento, fuerza y valentía. Feliz Día Internacional de la Mujer!"
+      }
+    }
+  }
 }

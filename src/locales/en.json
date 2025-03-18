@@ -18,7 +18,29 @@
     "button": "Read more"
   },
   "work": {
-    "title": "Selected projects"
+    "title": "Selected Projects",
+    "projects": {
+      "rotaDaBaleia": {
+        "title": "Rota da Baleia Franca",
+        "description": "Website made for a client, highlighting tourist attractions, sustainability, and ecotourism."
+      },
+      "dictionaryApp": {
+        "title": "Dictionary Search",
+        "description": "A powerful dictionary search that provides detailed definitions and translations."
+      },
+      "weatherSearch": {
+        "title": "Weather Forecast",
+        "description": "A weather forecast app that provides real-time weather data for any location."
+      },
+      "recipesGenerator": {
+        "title": "Recipes Generator",
+        "description": "An app that generates random recipes based on available ingredients."
+      },
+      "travelShowcase": {
+        "title": "Travel Showcase",
+        "description": "An interactive and responsive website that highlights the amazing aspects of a destination."
+      }
+    }
   },
   "about": {
     "subtitle": "Hello, I'm Julia Bacchi — I love to create",
@@ -40,5 +62,43 @@
   },
   "contact": {
     "title": "Say Hello."
+  },
+  "blog": {
+    "title": "Blogging my code journey",
+    "subtitle": "One line of code at a time - By Julia Bacchi",
+    "posts": {
+      "career": {
+        "title": "This is about change!",
+        "description": "Taking the leap into a new career path, where change leads to growth and opportunity."
+      },
+      "beginner": {
+        "title": "I wanna be a programmer",
+        "description": "Ready to dive into the world of programming? Unlock the doors to endless possibilities in tech."
+      },
+      "woman": {
+        "title": "We women in programming",
+        "description": "Women in programming are breaking norms and shaping a more inclusive, innovative tech future."
+      },
+      "bridge": {
+        "title": "Building bridges with APIs",
+        "description": "The backbone of modern development, enabling seamless connections and empowering code."
+      },
+      "impostor": {
+        "title": "Embracing your inner coder",
+        "description": "Overcome imposter syndrome and own your coding journey with confidence and resilience."
+      },
+      "purpose": {
+        "title": "The power of purpose",
+        "description": "What turns dreams into action? Discover how finding your WHY can transform your journey."
+      },
+      "ai": {
+        "title": "And about AI?",
+        "description": "Exploring the transformative impact of artificial intelligence in 2024 and beyond."
+      },
+      "day": {
+        "title": "Hey girl, I got you",
+        "description": "Honoring the incredible impact of women in tech and beyond on International Women's Day."
+      }
+    }
   }
 }
