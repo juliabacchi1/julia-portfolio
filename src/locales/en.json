@@ -20,6 +20,24 @@
   "work": {
     "title": "Selected projects"
   },
+  "about": {
+    "subtitle": "Hello, I'm Julia Bacchi — I love to create",
+    "title": "B",
+    "titleTwo": "autiful",
+    "rotatingWords": ["Experiences", "Interaction", "Websites"],
+    "description": "About me",
+    "descriptionTextOne": "I'm a front-end developer who codes with personality, designs with purpose, and dreams in green.",
+    "descriptionTextTwo": "I believe technology should be intuitive, impactful, and a force for good.",
+    "descriptionTextThree": "Between lines of code, you'll find me flowing through yoga, surrounded by pets, or recharging by the sea."
+  },
+  "aboutProcess": {
+    "title": "Why me?",
+    "subtitle": "Discover what makes my work unique and why I can be the developer you're looking for."
+  },
+  "certificate": {
+    "title": "Certifications",
+    "subtitle": "Certified in Junior Front-End Development. Also took bootcamps and specialization courses."
+  },
   "contact": {
     "title": "Say Hello."
   }

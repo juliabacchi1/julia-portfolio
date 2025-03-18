@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/About.css";
 import Contact from "../components/Contact";
 import SpinningSVG from "../components/SpinningSVG";
@@ -6,10 +6,17 @@ import RotatingWords from "../components/RotatingWords";
 import CertificateList from "../components/CertificateList";
 import AboutProcess from "../components/AboutProcess";
 import AboutImage from "../assets/images/AboutImage.png";
-
-const rotatingWords = ["Websites", "Experiences", "Interaction"];
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+  const [rotatingWords, setRotatingWords] = useState([]);
+
+  useEffect(() => {
+    // Define as palavras a serem rotacionadas com base na tradução
+    setRotatingWords(t("about.rotatingWords", { returnObjects: true }));
+  }, [t]); // Atualiza sempre que o idioma mudar
+
   useEffect(() => {
     const element = document.getElementById("about");
     if (element) {
@@ -21,10 +28,11 @@ function About() {
     <section className="About" id="about">
       <div className="Container-about">
         <div className="About-hero">
-          <h3>Hello, I'm Julia Bacchi — I love to create</h3>
+          <h3>{t("about.subtitle")}</h3>
           <h1>
-            B<SpinningSVG />
-            autiful
+            {t("about.title")}
+            <SpinningSVG />
+            {t("about.titleTwo")}
           </h1>
           <RotatingWords words={rotatingWords} />
         </div>
@@ -32,13 +40,11 @@ function About() {
         <div className="About-content">
           <div className="About-main">
             <div className="About-description">
-              <h4>About me</h4>
+              <h4>{t("about.description")}</h4>
               <p>
-                I'm a front-end developer who codes with personality, designs
-                with purpose, and dreams in green.<br />I believe technology should
-                be intuitive, impactful, and a force for good.<br /> Between lines of
-                code, you'll find me flowing through yoga, surrounded by pets,
-                or recharging by the sea.
+                {t("about.descriptionTextOne")}
+                <br /> {t("about.descriptionTextTwo")}
+                <br /> {t("about.descriptionTextThree")}
               </p>
             </div>
             <div className="About-image">

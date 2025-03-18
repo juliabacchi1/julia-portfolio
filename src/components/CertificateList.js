@@ -5,6 +5,7 @@ import Certificate3 from "../assets/images/Certificate3.png";
 import Certificate4 from "../assets/images/Certificate4.png";
 import Certificate5 from "../assets/images/Certificate5.png";
 import Certificate6 from "../assets/images/Certificate6.png";
+import { useTranslation } from "react-i18next";
 
 const certifications = [
   {
@@ -35,13 +36,13 @@ const certifications = [
 ];
 
 const CertificateList = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="About-certificates">
-      <h4>Certifications</h4>
-      <p>
-        Certified in Junior Front-End Development. Also took
-        bootcamps and specialization courses.
-      </p>
+      <h4>{t("certificate.title")}</h4>
+      <p>{t("certificate.subtitle")}</p>
       <div className="About-certificates-grid">
         {certifications.map((cert, index) => (
           <div className="Certificate-card" key={index}>

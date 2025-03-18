@@ -7,6 +7,7 @@ import Process5 from "../assets/images/Process5.png";
 import Process6 from "../assets/images/Process6.png";
 import Process7 from "../assets/images/Process7.png";
 import Process8 from "../assets/images/Process8.png";
+import { useTranslation } from "react-i18next";
 
 const cards = [
   {
@@ -36,13 +37,13 @@ const cards = [
 ];
 
 const AboutProcess = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="About-process">
-      <h4>Why me?</h4>
-      <p>
-        Discover what makes my work unique and why I can be the developer you're
-        looking for.
-      </p>
+      <h4>{t("aboutProcess.title")}</h4>
+      <p>{t("aboutProcess.subtitle")}</p>
       <div className="Card-container">
         {cards.map((card, index) => (
           <div key={index} className="Card">

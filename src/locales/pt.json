@@ -20,6 +20,24 @@
   "work": {
     "title": "Últimos trabalhos"
   },
+  "about": {
+    "subtitle": "Olá, sou Julia Bacchi — Eu amo criar",
+    "title": "Inspirad",
+    "titleTwo": "ras",
+    "rotatingWords": ["Soluções", "Experiências", "Interações"],
+    "description": "Sobre mim",
+    "descriptionTextOne": "Sou uma desenvolvedora front-end que programa com personalidade, cria com propósito e busca um futuro sustentável.",
+    "descriptionTextTwo": "Acredito que a tecnologia deve ser intuitiva, impactante e responsável.",
+    "descriptionTextThree": "Entre linhas de código, você me encontra no yoga, cercada por pets ou recarregando as energias à beira-mar."
+  },
+  "aboutProcess": {
+    "title": "Por que eu?",
+    "subtitle": "Descubra o que torna meu trabalho único e por que sou a desenvolvedora que você procura."
+  },
+  "certificate": {
+    "title": "Certificações",
+    "subtitle": "Graduada em Desenvolvimento Front-End Junior. Possuo bootcamps e cursos especializados."
+  },
   "contact": {
     "title": "Vamos conversar"
   }
