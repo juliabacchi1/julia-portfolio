@@ -1,23 +1,46 @@
 import React from "react";
 import "../styles/CreativeHeader.css";
-import Creative from "../assets/images/Creative.png";
-import Resume from "../assets/images/Resume.pdf";
 import { useTranslation } from "react-i18next";
 
-function CreativeHeader() {
+import CreativePT from "../assets/images/Creative_pt.png";
+import CreativeES from "../assets/images/Creative_es.png";
+import CreativeEN from "../assets/images/Creative_en.png";
 
-  const { t } = useTranslation();
+function CreativeHeader() {
+  const { t, i18n } = useTranslation();
+
+  const getResumeFile = () => {
+    switch (i18n.language) {
+      case "es":
+        return "/curriculum-es.pdf";
+      case "pt":
+        return "/curriculo-pt.pdf";
+      default:
+        return "/resume-en.pdf";
+    }
+  };
+
+  const getImage = () => {
+    switch (i18n.language) {
+      case "es":
+        return CreativeES;
+      case "pt":
+        return CreativePT;
+      default:
+        return CreativeEN;
+    }
+  };
 
   return (
     <section className="CreativeHeader">
       <div className="Container-header">
         <div className="Text-header">
           <h4>{t("creativeHeader.greeting")}</h4>
-          <img src={Creative} alt="Creative" className="Creative" />
-          <h3>portfolio</h3>
+          <img src={getImage()} alt="Creative" className="Creative" />
+          <h3>{t("creativeHeader.description")}</h3>
           <div className="Button-header">
             <a
-              href={Resume}
+              href={getResumeFile()}
               target="_blank"
               rel="noopener noreferrer"
               download="Resume_Julia.pdf"
