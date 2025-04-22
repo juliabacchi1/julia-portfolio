@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: clamp(2rem, 5vw, 4rem);
 }
 
 .Text-header h4 {
@@ -27,15 +27,15 @@
 }
 
 .Text-header h3 {
-  font-size: clamp(55px, 10vw, 135px);
+  font-size: clamp(3.4rem, 11vw, 8.4rem);
+  font-family: "Playwrite RO", cursive;
   font-weight: 500;
-  text-transform: uppercase;
+  line-height: 1.05;
   margin: 0;
-  color: var(--text-color);
 }
 
 .Button-header {
-  margin: 40px auto;
+  margin-block: clamp(2rem, 6vw, 6rem);
 }
 
 .Button-header a {
@@ -61,10 +61,14 @@
 
 @media (max-width: 768px) {
   .CreativeHeader {
-    padding: 8vh 0;
+    padding-block: 8vh;
   }
 
   .Text-header {
     gap: 10px;
+  }
+
+    .Text-header h3 {
+    line-height: normal;
   }
 }
