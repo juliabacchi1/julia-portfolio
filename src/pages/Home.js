@@ -16,11 +16,12 @@ function Home() {
       <section id="home">
         <div className="Container-home">
           <div className="Main-content">
-            <div className="Text-content">
+            <div className="Text-content fade-in-up">
               <h4>{t("home.greeting")}</h4>
               <h1>{t("home.role")}</h1>
+              <p>{t("home.description")}</p>
             </div>
-            <div className="Image-container">
+            <div className="Image-container fade-in-up">
               <img src={Profile} alt="Julia" className="Profile-img" />
             </div>
           </div>

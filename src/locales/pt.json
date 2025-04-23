@@ -1,7 +1,8 @@
 {
   "home": {
-    "greeting": "Olá, eu sou a Julia!",
-    "role": "Dev front-end"
+    "greeting": "olá! eu sou a Julia",
+    "role": "a web developer",
+    "description": "que desenvolve sites com cara de casa"
   },
   "navbar": {
     "work": "Trabalhos",

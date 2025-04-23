@@ -1,7 +1,8 @@
 {
   "home": {
-    "greeting": "Hi, I'm Julia!",
-    "role": "A Web Developer"
+    "greeting": "hi! I'm Julia",
+    "role": "a web developer",
+    "description": "who builds websites that feel like home"
   },
   "navbar": {
     "work": "Work",
