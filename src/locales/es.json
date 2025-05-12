@@ -22,6 +22,10 @@
   "work": {
     "title": "Últimos trabajos",
     "projects": {
+      "ecoTasks": {
+        "title": "EcoTasks",
+        "description": "Una app de desafíos sostenibles que ayuda a reducir la huella de carbono con acciones diarias simples."
+      },
       "rotaDaBaleia": {
         "title": "Rota da Baleia Franca",
         "description": "Sitio web creado para un cliente, destacando atracciones turísticas, sostenibilidad y ecoturismo."
@@ -37,10 +41,6 @@
       "recipesGenerator": {
         "title": "Recipes Generator",
         "description": "Una aplicación que genera recetas según los ingredientes disponibles en casa."
-      },
-      "travelShowcase": {
-        "title": "Travel Showcase",
-        "description": "Un sitio web interactivo y responsivo que destaca los aspectos increíbles de un destino."
       }
     }
   },

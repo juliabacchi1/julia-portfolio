@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import DictionaryApp from "../assets/images/Dictionary-App.png";
 import WeatherSearch from "../assets/images/Weather-Search-Engine.png";
 import RecipesGenerator from "../assets/images/Recipes-generator.png";
-import TravelShowcase from "../assets/images/Travel-showcase.png";
+import EcoTasks from "../assets/images/EcoTasks.png";
 import RotaDaBaleia from "../assets/images/Rota-da-Baleia.png";
 import { useTranslation } from "react-i18next";
 
@@ -15,11 +15,19 @@ function Work() {
     "Dictionary App": DictionaryApp,
     "Weather Search": WeatherSearch,
     "Recipes Generator": RecipesGenerator,
-    "Travel Showcase": TravelShowcase,
+    "EcoTasks": EcoTasks,
     "Rota da Baleia": RotaDaBaleia,
   };
 
   const projects = [
+    {
+      image: "EcoTasks",
+      title: t("work.projects.ecoTasks.title"),
+      description: t("work.projects.ecoTasks.description"),
+      liveLink: "https://ecotasks.vercel.app/",
+      githubLink: "https://github.com/juliabacchi1/ecotasks",
+      category: "React, Vite",
+    },
     {
       image: "Rota da Baleia",
       title: t("work.projects.rotaDaBaleia.title"),
@@ -51,14 +59,6 @@ function Work() {
       description: t("work.projects.recipesGenerator.description"),
       liveLink: "https://recipes-generator-ai.netlify.app/",
       githubLink: "https://github.com/juliabacchi1/recipes-generator",
-      category: "JavaScript",
-    },
-    {
-      image: "Travel Showcase",
-      title: t("work.projects.travelShowcase.title"),
-      description: t("work.projects.travelShowcase.description"),
-      liveLink: "https://fullyresponsive-destination.netlify.app/",
-      githubLink: "https://github.com/juliabacchi1/travel-destination",
       category: "JavaScript",
     },
   ];

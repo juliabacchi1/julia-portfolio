@@ -8,7 +8,6 @@ import Profile from "../assets/images/Profile.png";
 import { useTranslation } from "react-i18next";
 
 function Home() {
-
   const { t } = useTranslation();
 
   return (

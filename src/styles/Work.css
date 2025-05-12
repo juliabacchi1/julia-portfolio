@@ -49,15 +49,8 @@
 }
 
 .Image-wrapper img {
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.033);
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
-}
-
-.Image-wrapper:hover .Image-block {
-  transform: scale(1.1);
 }
 
 .Content-wrapper {
@@ -86,10 +79,9 @@
   opacity: 0.5;
   justify-content: center;
   align-items: center;
-  width: 50px;
   height: 20px;
   margin-bottom: 120px;
-  margin-left: 45px;
+  margin-left: 10px;
   display: flex;
   position: absolute;
   inset: auto auto 0% 0%;
